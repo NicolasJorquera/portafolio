@@ -1,0 +1,34 @@
+
+
+.introductionContainer{
+    
+    justify-content: space-around;
+    display: flex;
+    padding: 100px;
+}
+
+.profilePicture{
+    display: flex;
+    height: 250px;
+}
+
+.description{
+    display: grid;
+    align-content: center;
+    justify-items: center;
+}
+
+.name{
+    padding: 10px;
+    font-size: 30px;
+}
+
+.degree{
+    padding: 10px;
+    font-size: 20px;
+}
+
+.university{
+    padding: 10px;
+    font-size: 20px;
+}

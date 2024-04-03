@@ -1,0 +1,13 @@
+
+$theme-colors: (
+  "primary": #18376d,
+  "secondary": #404752,
+  "dark": #1a1d23
+);
+
+@import '~bootstrap/scss/bootstrap.scss';
+
+.sectionsContainers{
+  background-color: #1a1d23;
+  color: white;
+}
