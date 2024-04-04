@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portafolio/static/css/main.26177240.css",
-    "main.js": "/portafolio/static/js/main.b87e9073.js",
+    "main.css": "/portafolio/static/css/main.2176461b.css",
+    "main.js": "/portafolio/static/js/main.c82c5dbd.js",
     "static/js/453.7d1ffe6d.chunk.js": "/portafolio/static/js/453.7d1ffe6d.chunk.js",
     "static/media/M19615449-3.pdf": "/portafolio/static/media/M19615449-3.4333adaf986096720ef5.pdf",
     "static/media/flappy2077Project.mp4": "/portafolio/static/media/flappy2077Project.71a3f787f2f3eda8d930.mp4",
@@ -20,12 +20,12 @@
     "static/media/flutterLogo.png": "/portafolio/static/media/flutterLogo.fe4b9f954ece00f092a1.png",
     "static/media/logo.svg": "/portafolio/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/portafolio/index.html",
-    "main.26177240.css.map": "/portafolio/static/css/main.26177240.css.map",
-    "main.b87e9073.js.map": "/portafolio/static/js/main.b87e9073.js.map",
+    "main.2176461b.css.map": "/portafolio/static/css/main.2176461b.css.map",
+    "main.c82c5dbd.js.map": "/portafolio/static/js/main.c82c5dbd.js.map",
     "453.7d1ffe6d.chunk.js.map": "/portafolio/static/js/453.7d1ffe6d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.26177240.css",
-    "static/js/main.b87e9073.js"
+    "static/css/main.2176461b.css",
+    "static/js/main.c82c5dbd.js"
   ]
 }
