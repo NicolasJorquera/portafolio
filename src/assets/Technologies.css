@@ -1,0 +1,71 @@
+
+
+.technologiesContainer{
+    padding: 100px;
+    padding-top: 0px;
+    padding-bottom: 0;
+}
+
+.technologiesRow{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 50px;
+}
+
+.imageSize{
+    height: 200px;
+}
+
+
+.flip-card {
+    background-color: transparent; /* Fondo transparente */
+    width: 200px; /* Ancho del círculo */
+    height: 200px; /* Altura del círculo */
+    perspective: 1000px; /* Profundidad de la perspectiva para el efecto de flip */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s; /* Transición suave para el efecto de flip */
+    transform-style: preserve-3d; /* Mantener la transformación en 3D */
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg); /* Girar la tarjeta al pasar el mouse */
+  }
+  
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Ocultar la parte posterior durante la rotación */
+  }
+  
+  .flip-card-front {
+    background-color: #bbb; /* Color del frente de la tarjeta */
+    border-radius: 50%; /* Hacer que el frente de la tarjeta sea un círculo */
+  }
+  
+  .flip-card-back {
+    background-color: #375ea1; /* Color del dorso de la tarjeta */
+    color: white;
+    border-radius: 50%; /* Hacer que el dorso de la tarjeta sea un círculo */
+    transform: rotateY(180deg); /* Inicialmente, mostrar el dorso de la tarjeta */
+    font-size: 40px; /* Tamaño de la fuente del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    padding: 10px; /* Añadir un relleno para separar el texto del borde del círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+  .technologiesTitle{
+    font-size: 75px;
+    text-align: start;
+    padding: 50px;
+    padding-top: 0%;
+}

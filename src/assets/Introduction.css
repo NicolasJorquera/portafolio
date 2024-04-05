@@ -1,34 +1,64 @@
 
 
-.introductionContainer{
+.nameAndShortDescription{
+    padding-top: 100px;
+    padding-right: 150px;
+    padding-left: 150px;
+    line-height: 13rem;
+    align-content: space-between;
+    display: grid;
+    height: 85vh;
+    overflow: auto;
+    .name{
+        font-size: 13rem;
+    }
+    .lastName{
+        font-size: 13rem;
+        margin-left: 15%;
+    }
+    .shortDescription{
+        font-size: 2rem;
+        margin-left: 50%;
+        line-height: 2.5rem;
+        text-align: end;
+    }
+}
+
+.aboutMeContainer{
     
-    justify-content: space-around;
+    justify-content: start;
     display: flex;
-    padding: 100px;
+    padding-top: 150px;
+    padding-left: 150px;
+    padding-right: 150px;
+    
 }
 
 .profilePicture{
     display: flex;
-    height: 250px;
+    height: 500px;
 }
 
-.description{
+.descriptionContainer{
+    padding-left: 100px;
+    padding-top: 50px;
     display: grid;
-    align-content: center;
-    justify-items: center;
+    align-content: start;
+    justify-items: start;
+    .name{
+        font-size: 3rem;
+    }
+    
+    .degree{
+        padding-bottom: 3rem;
+        font-size: 2rem;
+        color: #609bff;
+    }
+    
+    .description{
+        font-size: 1.5rem;
+        padding-bottom: 3rem;
+    }
 }
 
-.name{
-    padding: 10px;
-    font-size: 30px;
-}
 
-.degree{
-    padding: 10px;
-    font-size: 20px;
-}
-
-.university{
-    padding: 10px;
-    font-size: 20px;
-}

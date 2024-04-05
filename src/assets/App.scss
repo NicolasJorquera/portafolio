@@ -1,13 +1,33 @@
 
 $theme-colors: (
-  "primary": #18376d,
+  "primary": #609bff,
   "secondary": #404752,
-  "dark": #1a1d23
+  "dark": #1a1d23,
+  "transparent": transparent
 );
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+.navbar{
+  font-size: 30px;
+
+  font-family: "Noto Sans", sans-serif;
+
+  .logoSize{
+    height: 65px;
+    width: 65px;
+  }
+
+  .leftPaddingNavbarItems{
+    padding-left: 50px !important;
+  }
+}
+
+
+
 .sectionsContainers{
+  font-family: "Noto Sans", sans-serif ;
+  font-weight: 100;
   background-color: #1a1d23;
   color: white;
 }

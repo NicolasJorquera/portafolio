@@ -1,5 +1,6 @@
 import logo from '../assets/logo.svg';
 import '../assets/App.scss';
+import React from 'react';
 
 function Test() {
     return (

@@ -1,8 +1,6 @@
 
 
-.projectsContainer{
-    padding: 100px;
-}
+
 
 .clickeableImage{
     cursor: pointer;
@@ -19,11 +17,46 @@
 
 .projectsRow{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     padding-bottom: 100px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 .separateButtons{
     display: flex;
     justify-content: space-evenly;
+}
+
+.projectsTitle{
+    font-size: 75px;
+    text-align: start;
+    padding-left: 150px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.projectContainer{
+    width: 45%;
+    
+
+    .projectImage{
+        width: 100%;
+    }
+
+    .projectDescription{
+        padding-top: 10px;
+        
+        height: 8rem;
+
+        .projectTitle{
+            font-size: 2rem;
+        }
+
+
+        .projectTag{
+            margin: 10px;
+            margin-left: 0;
+        }
+    }
 }
