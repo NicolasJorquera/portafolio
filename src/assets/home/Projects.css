@@ -29,7 +29,8 @@
 }
 
 .projectsTitle{
-    font-size: 75px;
+    font-size: 5rem;
+    font-weight: 400;
     text-align: start;
     padding-left: 150px;
     padding-top: 100px;

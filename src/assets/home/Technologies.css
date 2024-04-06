@@ -64,7 +64,8 @@
   }
 
   .technologiesTitle{
-    font-size: 75px;
+    font-size: 5rem;
+    font-weight: 400;
     text-align: start;
     padding: 50px;
     padding-top: 0%;

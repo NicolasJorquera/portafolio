@@ -1,0 +1,41 @@
+
+
+.descriptionContainerAbout{
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 100px;
+    display: grid;
+}
+
+.descriptionTitle{
+    font-size: 5rem;
+    justify-self: center;
+    margin-bottom: 100px;
+}
+
+.descriptionSubtitle{
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nameAndCareer{
+
+    .nameAbout{
+        font-size: 3rem;
+    }
+    .careerAbout{
+        font-size: 2rem;
+        color: #609bff;
+    }
+}
+
+.resumeButton{
+    padding: 1rem;
+    font-size: 25px;
+}
+
+.descriptionAbout{
+    font-size: 1.5rem;
+}

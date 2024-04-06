@@ -1,19 +1,19 @@
 
 
-import '../assets/Technologies.css'
+import '../../assets/home/Technologies.css'
 
 import Image from 'react-bootstrap/Image';
 
-import reactLogo from '../assets/images/technologies/reactLogo.png'
-import javascriptLogo from '../assets/images/technologies/javascriptLogo.jpg'
-import cLogo from '../assets/images/technologies/cLogo.png'
-import rosLogo from '../assets/images/technologies/rosLogo.png'
-import cppLogo from '../assets/images/technologies/cppLogo.png'
-import pythonLogo from '../assets/images/technologies/pythonLogo.png'
-import unityLogo from '../assets/images/technologies/unityLogo.png'
-import flutterLogo from '../assets/images/technologies/flutterLogo.png'
-import dartLogo from '../assets/images/technologies/dartLogo.png'
-import androidLogo from '../assets/images/technologies/androidLogo.png'
+import reactLogo from '../../assets/images/technologies/reactLogo.png'
+import javascriptLogo from '../../assets/images/technologies/javascriptLogo.jpg'
+import cLogo from '../../assets/images/technologies/cLogo.png'
+import rosLogo from '../../assets/images/technologies/rosLogo.png'
+import cppLogo from '../../assets/images/technologies/cppLogo.png'
+import pythonLogo from '../../assets/images/technologies/pythonLogo.png'
+import unityLogo from '../../assets/images/technologies/unityLogo.png'
+import flutterLogo from '../../assets/images/technologies/flutterLogo.png'
+import dartLogo from '../../assets/images/technologies/dartLogo.png'
+import androidLogo from '../../assets/images/technologies/androidLogo.png'
 import React from 'react';
 
 function Technologies() {

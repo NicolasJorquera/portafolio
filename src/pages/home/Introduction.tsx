@@ -1,13 +1,13 @@
-import '../assets/Introduction.css'
+import '../../assets/home/Introduction.css'
 import Image from 'react-bootstrap/Image';
 
-import profilePicture from '../assets/profilePicture.jpg'
+import profilePicture from '../../assets/profilePicture.jpg'
 import { Button } from 'react-bootstrap';
 import React from 'react';
 
 function Introduction() {
     return (
-        <div>
+        <div className='introductonContainer'>
             <div className='nameAndShortDescription'>
                 <div className='nameAndLastName'>
                     <div className='name'>

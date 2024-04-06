@@ -11,16 +11,19 @@
     overflow: auto;
     .name{
         font-size: 13rem;
+        font-weight: 400;
     }
     .lastName{
         font-size: 13rem;
         margin-left: 15%;
+        font-weight: 400;
     }
     .shortDescription{
         font-size: 2rem;
         margin-left: 50%;
         line-height: 2.5rem;
         text-align: end;
+        margin-bottom: 5px;
     }
 }
 

@@ -11,7 +11,8 @@ $theme-colors: (
 .navbar{
   font-size: 30px;
 
-  font-family: "Noto Sans", sans-serif;
+  // font-family: "Sarabun Sans", sans-serif;
+  font-weight: 100;
 
   .logoSize{
     height: 65px;
@@ -26,7 +27,7 @@ $theme-colors: (
 
 
 .sectionsContainers{
-  font-family: "Noto Sans", sans-serif ;
+  // font-family: "Sarabun", sans-serif ;
   font-weight: 100;
   background-color: #1a1d23;
   color: white;
