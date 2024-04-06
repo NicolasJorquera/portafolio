@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portafolio/static/css/main.43e122d0.css",
-    "main.js": "/portafolio/static/js/main.6a6cca3f.js",
+    "main.js": "/portafolio/static/js/main.dfcf4b12.js",
     "static/js/453.7d1ffe6d.chunk.js": "/portafolio/static/js/453.7d1ffe6d.chunk.js",
     "static/media/profilePicture.jpg": "/portafolio/static/media/profilePicture.550088e88f40ec74bde0.jpg",
     "static/media/mappingProject.jpg": "/portafolio/static/media/mappingProject.9b88c8ec67b7c56499e2.jpg",
@@ -19,11 +19,11 @@
     "static/media/flutterLogo.png": "/portafolio/static/media/flutterLogo.fe4b9f954ece00f092a1.png",
     "index.html": "/portafolio/index.html",
     "main.43e122d0.css.map": "/portafolio/static/css/main.43e122d0.css.map",
-    "main.6a6cca3f.js.map": "/portafolio/static/js/main.6a6cca3f.js.map",
+    "main.dfcf4b12.js.map": "/portafolio/static/js/main.dfcf4b12.js.map",
     "453.7d1ffe6d.chunk.js.map": "/portafolio/static/js/453.7d1ffe6d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.43e122d0.css",
-    "static/js/main.6a6cca3f.js"
+    "static/js/main.dfcf4b12.js"
   ]
 }
