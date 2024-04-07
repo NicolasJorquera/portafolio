@@ -9,6 +9,7 @@
     display: grid;
     height: 85vh;
     overflow: auto;
+    color: white;
     .name{
         font-size: 13rem;
         font-weight: 400;
@@ -28,7 +29,7 @@
 }
 
 .aboutMeContainer{
-    
+    color: white;
     justify-content: start;
     display: flex;
     padding-top: 150px;
