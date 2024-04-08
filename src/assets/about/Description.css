@@ -5,11 +5,12 @@
     margin-right: 150px;
     margin-bottom: 100px;
     display: grid;
+    padding-top: 3rem;
 }
 
 .descriptionTitle{
-    font-size: 5rem;
-    justify-self: center;
+    font-size: 4rem;
+    text-align: center;
     margin-bottom: 100px;
     color: white;
 }

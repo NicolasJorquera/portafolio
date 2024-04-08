@@ -1,8 +1,9 @@
 
 $theme-colors: (
   "primary": #609bff,
-  "secondary": #404752,
+  "secondary": rgb(200, 200, 200),
   "dark": #1a1d23,
+  "white": rgb(231, 231, 231),
   "transparent": transparent
 );
 
@@ -31,4 +32,32 @@ $theme-colors: (
   font-weight: 100;
   background-color: #1a1d23;
   color: #1a1d23;
+}
+
+
+.footerContainer{
+  color: rgb(254, 255, 248);
+  background-color: rgb(59, 59, 59);
+  padding-left: 150px;
+  padding-right: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footerText{
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.footerLinks{
+  display: flex;
+  gap: 10px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none; /* no underline */
 }

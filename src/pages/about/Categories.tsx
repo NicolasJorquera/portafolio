@@ -14,7 +14,7 @@ function Categories() {
                         <AboutCategorieItem 
                         timeLapse={["2021", "2024"]} 
                         position='Desarrollador frontend y analista de datos' 
-                        companyName='Assayware' 
+                        companyName='Datablick' 
                         bulletPoints={[
                             "Desarrollar Saas para ayudar en pruebas de rendimiento.",
                             "Crear aplicación web en React de simulación de sistemas.",

@@ -6,9 +6,9 @@ import '../../assets/about/Description.css'
 function Description() {
     return (
         <div className="descriptionContainerAbout">
-            <div className='descriptionTitle'>
+            {/* <div className='descriptionTitle'>
                 Sobre mi
-            </div>
+            </div> */}
 
             <div className='descriptionSubtitle'>
                 <div className='nameAndCareer'>

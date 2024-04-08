@@ -1,0 +1,58 @@
+
+
+.flappy2077ProjectPageHeader{
+    color: white;
+    justify-content: center;
+    display: grid;
+    text-align: center;
+}
+
+.headerTags{
+    display: flex;
+    font-size: 1.4rem;
+    gap: 10px;
+    justify-content: center;
+    
+}
+
+.withPointsContainer{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.headerPoints{
+    height: 0.5rem;
+    width: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #609bff;
+}
+
+.headerTitle{
+    font-size: 5rem;
+}
+
+.projectLink{
+    padding: 0.7rem;
+    font-size: 1.2rem;
+}
+
+.projectLinks{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+}
+
+.projectImageContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    
+}
+
+.projectImage{
+    width: 65%;
+    border-radius: 20px !important;
+    
+}
