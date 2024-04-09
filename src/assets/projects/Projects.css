@@ -1,4 +1,4 @@
-@media (min-width: 500px){
+@media (min-width: 800px){
     .projectsPageTitle{
         font-size: 4rem;
         color: white;
@@ -35,14 +35,15 @@
     }
     
     .projectsFiltered{
-        display: inline-block;
+        display: flex;
         flex-wrap: wrap;
+        width: 100%;
         gap: 3rem;
         margin-top: 3rem;
         justify-content: space-between;
     }
 }
-@media (max-width: 500px){
+@media (max-width: 800px){
     .projectsPageTitle{
         font-size: 4rem;
         color: white;

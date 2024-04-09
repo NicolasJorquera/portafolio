@@ -1,4 +1,4 @@
-@media (min-width: 500px){
+@media (min-width: 800px){
   .categoriesContainer{
     margin-left: 150px; 
     margin-right: 150px;
@@ -79,7 +79,7 @@
   }
 }
 
-@media (max-width: 500px){
+@media (max-width: 800px){
   .categoriesContainer{
     margin-top: 20px;
     margin-left: 15px; 

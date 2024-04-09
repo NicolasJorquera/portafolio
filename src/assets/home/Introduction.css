@@ -1,7 +1,7 @@
 
 
 
-@media (min-width: 500px){
+@media (min-width: 800px){
     .nameAndShortDescription{
         padding-top: 100px;
         padding-right: 150px;
@@ -68,7 +68,7 @@
         }
     }
 }
-@media (max-width: 500px){
+@media (max-width: 800px){
     .nameAndShortDescription{
         margin-top: 10px;
         margin-right: 10px;
