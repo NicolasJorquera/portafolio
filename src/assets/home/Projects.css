@@ -1,73 +1,157 @@
 
 
 
-
-.clickeableImage{
-    cursor: pointer;
-}
-
-.imageModal .modal-content{
-    background-color: #1a1d23;
-    color: white;
-}
-
-.imageModal .modal-header{
-    border-bottom: 0cm;
-}
-
-.projectsRow{
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 100px;
-    margin-left: 150px;
-    margin-right: 150px;
-}
-
-.separateButtons{
-    display: flex;
-    justify-content: space-evenly;
-}
-
-.projectsTitle{
-    font-size: 5rem;
-    font-weight: 400;
-    text-align: start;
-    padding-left: 150px;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    color: white;
-}
-
-.projectContainer{
-    width: 48%;
-    color: white;
-
-    .projectImage{
-        width: 100%;
+@media (min-width: 500px){
+    .clickeableImage{
+        cursor: pointer;
     }
-
-    .projectDescription{
-        padding-top: 10px;
-        
-        height: 8rem;
-
-        .projectTitle{
-            font-size: 2rem;
-        }
-
-
     
+    .imageModal .modal-content{
+        background-color: #1a1d23;
+        color: white;
     }
-
-    .projectTags{
+    
+    .imageModal .modal-header{
+        border-bottom: 0cm;
+    }
+    
+    .projectsRow{
         display: flex;
-        gap: 10px;
-        margin-top: 10px;
-
-        .projectTag:hover{
-            color: rgb(200, 200, 200); 
-            background-color: transparent; 
-            border-color: rgb(200, 200, 200);
+        justify-content: space-between;
+        padding-bottom: 100px;
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+    
+    .separateButtons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .projectsTitle{
+        font-size: 5rem;
+        font-weight: 400;
+        text-align: start;
+        padding-left: 150px;
+        padding-top: 100px;
+        padding-bottom: 50px;
+        color: white;
+    }
+    
+    .projectContainer{
+        width: 45%;
+        color: white;
+    
+        .projectImage{
+            width: 100%;
+        }
+    
+        .projectDescription{
+            padding-top: 10px;
+            
+            height: 8rem;
+    
+            .projectTitle{
+                font-size: 2rem;
+            }
+    
+    
+        
+        }
+    
+        .projectTags{
+            display: flex;
+            gap: 10px;
+            margin-top: 10px;
+    
+            .projectTag:hover{
+                color: rgb(200, 200, 200); 
+                background-color: transparent; 
+                border-color: rgb(200, 200, 200);
+            }
         }
     }
+}
+
+
+@media (max-width: 500px){
+    .clickeableImage{
+        cursor: pointer;
+    }
+    
+    .imageModal .modal-content{
+        background-color: #1a1d23;
+        color: white;
+    }
+    
+    .imageModal .modal-header{
+        border-bottom: 0cm;
+    }
+    
+    .projectsRow{
+        display: grid;
+        gap: 10px;
+        justify-items: center;
+        margin-bottom: 10px;
+        margin-left: 15px;
+        margin-right: 15px;
+        position: relative;
+    }
+    
+    .separateButtons{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    .projectsTitle{
+        font-size: 3rem;
+        line-height: 3rem;
+        font-weight: 400;
+        text-align: center;
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        color: white;
+    }
+    
+    .projectContainer{
+        width: 70%;
+        color: white;
+        margin-bottom: 20px;
+    
+        .projectImage{
+            width: 100%;
+        }
+    
+        .projectDescription{
+            padding-top: 10px;
+    
+            .projectTitle{
+                font-size: 1.5rem;
+            }
+    
+    
+        
+        }
+    
+        .projectTags{
+            display: inline-block;
+            gap: 10px;
+            margin-top: 10px;
+    
+            .projectTag:hover{
+                color: rgb(200, 200, 200); 
+                background-color: transparent; 
+                border-color: rgb(200, 200, 200);
+                
+            }
+
+            .projectTag{
+                margin: 5px;
+                font-size: 0.8rem;
+            }
+        }
+    }
+
 }

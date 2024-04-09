@@ -1,68 +1,139 @@
 
 
-.nameAndShortDescription{
-    padding-top: 100px;
-    padding-right: 150px;
-    padding-left: 150px;
-    line-height: 13rem;
-    align-content: space-between;
-    display: grid;
-    height: 85vh;
-    overflow: auto;
-    color: white;
-    .name{
-        font-size: 13rem;
-        font-weight: 400;
-    }
-    .lastName{
-        font-size: 13rem;
-        margin-left: 15%;
-        font-weight: 400;
-    }
-    .shortDescription{
-        font-size: 2rem;
-        margin-left: 50%;
-        line-height: 2.5rem;
-        text-align: end;
-        margin-bottom: 5px;
-    }
-}
 
-.aboutMeContainer{
-    color: white;
-    justify-content: start;
-    display: flex;
-    padding-top: 150px;
-    padding-left: 150px;
-    padding-right: 150px;
-    
-}
-
-.profilePicture{
-    display: flex;
-    height: 500px;
-}
-
-.descriptionContainer{
-    padding-left: 100px;
-    padding-top: 50px;
-    display: grid;
-    align-content: start;
-    justify-items: start;
-    .name{
-        font-size: 3rem;
+@media (min-width: 500px){
+    .nameAndShortDescription{
+        padding-top: 100px;
+        padding-right: 150px;
+        padding-left: 150px;
+        line-height: 13rem;
+        align-content: space-between;
+        display: grid;
+        height: 85vh;
+        overflow: auto;
+        color: white;
+        .name{
+            font-size: 13rem;
+            font-weight: 400;
+        }
+        .lastName{
+            font-size: 13rem;
+            margin-left: 15%;
+            font-weight: 400;
+        }
+        .shortDescription{
+            font-size: 2rem;
+            margin-left: 50%;
+            line-height: 2.5rem;
+            text-align: end;
+            margin-bottom: 5px;
+        }
     }
     
-    .degree{
-        padding-bottom: 3rem;
-        font-size: 2rem;
-        color: #609bff;
+    .aboutMeContainer{
+        color: white;
+        justify-content: start;
+        display: flex;
+        padding-top: 150px;
+        padding-left: 150px;
+        padding-right: 150px;
+        
     }
     
-    .description{
-        font-size: 1.5rem;
-        padding-bottom: 3rem;
+    .profilePicture{
+        display: flex;
+        height: 500px;
+    }
+    
+    .descriptionContainer{
+        padding-left: 100px;
+        padding-top: 50px;
+        display: grid;
+        align-content: start;
+        justify-items: start;
+        .name{
+            font-size: 3rem;
+        }
+        
+        .degree{
+            padding-bottom: 3rem;
+            font-size: 2rem;
+            color: #609bff;
+        }
+        
+        .description{
+            font-size: 1.5rem;
+            padding-bottom: 3rem;
+            color: rgb(225, 225, 225);
+        }
     }
 }
+@media (max-width: 500px){
+    .nameAndShortDescription{
+        margin-top: 10px;
+        margin-right: 10px;
+        margin-left: 10px;
+        line-height: 4rem;
+        align-content: space-between;
+        display: grid;
+        overflow: auto;
+        color: white;
+        .name{
+            font-size: 4rem;
+            font-weight: 400;
+        }
+        .lastName{
+            font-size: 4rem;
+            margin-left: 15%;
+            font-weight: 400;
+        }
+        .shortDescription{
+            margin-top: 2rem;
+            font-size: 1rem;
+            margin-left: 50%;
+            line-height: 1rem;
+            text-align: end;
+            margin-bottom: 5px;
+        }
+    }
 
-
+    .aboutMeContainer{
+        color: white;
+        justify-content: start;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        max-width: 100%;
+        
+    }
+    
+    .profilePicture{
+        display: flex;
+        justify-content: center;
+        height: 250px;
+    }
+    
+    .descriptionContainer{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        display: grid;
+        align-content: start;
+        justify-items: center;
+        text-align: center;
+        .name{
+            font-size: 2rem;
+        }
+        .degree{
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+            color: #609bff;
+        }
+        
+        .description{
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            color: rgb(225, 225, 225);
+        }
+    }
+}

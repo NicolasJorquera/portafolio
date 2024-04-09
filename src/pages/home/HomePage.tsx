@@ -11,7 +11,7 @@ function HomePage() {
         <div className='sectionsContainers'>
         <Introduction/>
         <Projects/>
-        <Technologies/>
+        {/* <Technologies/> */}
       </div>
     )
 }

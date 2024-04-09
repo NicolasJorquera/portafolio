@@ -9,11 +9,42 @@ $theme-colors: (
 
 @import '~bootstrap/scss/bootstrap.scss';
 
+
+
+@media (max-width: 500px){
+  .navbar-expand-sm .navbar-collapse {
+    justify-content: end;
+  }
+
+  .navbar-collapse{
+    text-align: end;
+  }
+  
+  .navbar > .container, .navbar > .container-fluid, .navbar > .container-sm, .navbar > .container-md, .navbar > .container-lg, .navbar > .container-xl, .navbar > .container-xxl{
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+}
+
+.navbar-expand-sm .navbar-collapse {
+  justify-content: end;
+}
+
+.widthResctriction{
+  max-width: 100%;
+}
+
 .navbar{
   font-size: 30px;
 
   // font-family: "Sarabun Sans", sans-serif;
   font-weight: 100;
+  width: 100%;
+  max-width: 100%;
+  text-align: end;
+  justify-content: space-around;
 
   .logoSize{
     height: 65px;
@@ -38,8 +69,8 @@ $theme-colors: (
 .footerContainer{
   color: rgb(254, 255, 248);
   background-color: rgb(59, 59, 59);
-  padding-left: 150px;
-  padding-right: 150px;
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
   display: flex;
@@ -48,7 +79,7 @@ $theme-colors: (
 }
 
 .footerText{
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: 400;
 }
 

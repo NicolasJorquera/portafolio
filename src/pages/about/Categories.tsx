@@ -12,15 +12,40 @@ function Categories() {
                     <Accordion.Header>Experiencia</Accordion.Header>
                     <Accordion.Body>
                         <AboutCategorieItem 
-                        timeLapse={["2021", "2024"]} 
-                        position='Desarrollador frontend y analista de datos' 
+                        timeLapse={["2024"]} 
+                        position='Implementación de observabilidad' 
                         companyName='Datablick' 
                         bulletPoints={[
-                            "Desarrollar Saas para ayudar en pruebas de rendimiento.",
-                            "Crear aplicación web en React de simulación de sistemas.",
-                            "Análisis y visualización de datos.",
-                            "Optimización de sistemas.",
-                            "Las principales tecnologías que se utilizaron: Python, Typescript, React, Docker, HTML, CSS."
+                            "Se busca implementar observabilidad (saber el estado del sistema observando las salidas del mismo) en un sistema propio de simulación de transacciones bancarias (Mirrorbank).",
+                            "Para lograr el monitoreo correcto del sistema se implementa un Elastic Stack, y para facilidad de trabajo se dockerizan todas las partes de la implementación.",
+                            "Tecnologías utilizadas: Elastic, Logstash, Kibana, Metricbeat, Filebeat, Docker."
+                        ]}/>
+
+                        <AboutCategorieItem 
+                        timeLapse={["2022", "2023"]} 
+                        position='Simulador de sistemas' 
+                        companyName='Datablick' 
+                        bulletPoints={[
+                            "Aplicación en React encargada de simular el comportamiento de un sistema y los nodos o etapas que lo componen. Se define el comportamiento de la carga que le llegará al sistema y algunos parámetros para cada nodo como concurrencia máxima y tiempo medio de lo que dura una visita en este nodo.",
+                            "Análisis, visualización y optimización de datos usando Typescript, y para levantarlo se utilizaron servicios de AWS.",
+                            "Tecnologías utilizadas: React, Typescript, EC2."
+                        ]}/>
+
+                        <AboutCategorieItem 
+                        timeLapse={["2022", "2023"]} 
+                        position='Aplicaciones móviles' 
+                        companyName='Personal' 
+                        bulletPoints={[
+                            "Flixer: Aplicación de biblioteca de películas y series. La aplicación se desarrollo con Flutter y la información se obtiene de la API TMDB. Flixer esta disponible en Android.",
+                            "Flappy 2077: Juego basado en Flappy bird. El juego se desarrollo para aprender Unity, el cual se tiene que programar con scripts de C y C++. Flappy 2077 esta disponible en Android."
+                        ]}/>
+                        <AboutCategorieItem 
+                        timeLapse={["2021", "2022"]} 
+                        position='Desarrollo de SaaS' 
+                        companyName='Datablick' 
+                        bulletPoints={[
+                            "Desarrollo de una herramienta para calcular el uso de recursos por aplicaciones docker, y así poder determinar la infraestructura requerida.",
+                            "Tecnologías utilizadas: React \& Nodejs, Typescript, lambda, DynamoDB y Aurora MYSQL."
                         ]}/>
                     </Accordion.Body>
                 </Accordion.Item>

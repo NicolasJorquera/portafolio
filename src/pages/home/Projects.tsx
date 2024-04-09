@@ -26,10 +26,10 @@ const lastProjects = [
         projectPage: 'flixer'
     },
     {
-        projectName: 'Mapeo tridimensional de entornos',
-        imageFile: mappingProject,
-        tags: ['ROS', 'Matlab', 'C', 'C++'],
-        projectPage: 'mapping'
+        projectName: 'Simulador de sistemas',
+        imageFile: simulatorProject,
+        tags: ['Typescript', 'React'],
+        projectPage: 'simulator'
     }
 
 ]

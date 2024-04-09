@@ -50,9 +50,16 @@ function AboutCategorieItem(props: aboutCategorieItemProps) {
                     {
                         props.bulletPoints.map((point) =>{
                             return(
-                                <div>
-                                    • {point}
+                                <div style={{display:'flex' }}>
+                                    <div className='bulletedPoint'>
+                                    •
+                                    </div>
+                                    <div>
+                                     {point}
+                                    </div>
+
                                 </div>
+                                
                             )
                         })
                     }

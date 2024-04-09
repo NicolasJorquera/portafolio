@@ -43,7 +43,7 @@ const projects: any[] = [
     {
         projectName: 'Dockeraid',
         imageFile: dockeraidProject,
-        tags: ['Typescript', 'React', 'Docker'],
+        tags: ['Typescript', 'React', 'Docker', 'AWS'],
         projectPage: 'dockeraid'
     }
 
@@ -149,7 +149,7 @@ function Projects() {
                     {
                         technologies.map((tech) => {
                             return(
-                                <Button onClick={()=>handleTechTagClick(tech)}  variant= {technologiesSelected.includes(tech)? 'secondary' : 'outline-secondary'} className='projectTag'>
+                                <Button onClick={()=>handleTechTagClick(tech)}  variant= {technologiesSelected.includes(tech)? 'secondary' : 'outline-secondary'} className='projectTagFilter'>
                                     {tech}
                                 </Button>
                             )

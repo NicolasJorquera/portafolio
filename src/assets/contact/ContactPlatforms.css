@@ -1,42 +1,84 @@
-
-
-
-.contactPlatformsContainer{
-    margin-left: 200px;
-    margin-right: 200px;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    color: white;
-}
-
-.formContainer{
-    display: grid;
-    gap: 50px;
-    font-size: 2rem;
-}
-
-.form-control{
-    font-size: 2rem;
-    border: 1px;
-    border-color: rgb(150, 150, 150);
-    border-style: solid;
-    background-color: #1a1d23;
-    color: white;
-}
-
-.form-control:focus{
-    box-shadow: none;
-    border: 1px;
-    border-color: rgb(150, 150, 150);
-    border-style: solid;
-    background-color: #1a1d23;
-    color: white;
+@media (min-width: 500px){
+    .contactPlatformsContainer{
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        color: white;
+    }
     
+    .formContainer{
+        display: grid;
+        gap: 50px;
+        font-size: 2rem;
+    }
+    
+    .form-control{
+        font-size: 2rem;
+        border: 1px;
+        border-color: rgb(150, 150, 150);
+        border-style: solid;
+        background-color: #1a1d23;
+        color: white;
+    }
+    
+    .form-control:focus{
+        box-shadow: none;
+        border: 1px;
+        border-color: rgb(150, 150, 150);
+        border-style: solid;
+        background-color: #1a1d23;
+        color: white;
+        
+    }
+    
+    .sendMail{
+        margin: 2rem;
+        margin-right: 0;
+        justify-content: end;
+        display: flex;
+    }
+}
+@media (max-width: 500px){
+    .contactPlatformsContainer{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        color: white;
+    }
+    
+    .formContainer{
+        display: grid;
+        gap: 50px;
+        font-size: 1.5rem;
+    }
+    
+    .form-control{
+        font-size: 1.5rem;
+        border: 1px;
+        border-color: rgb(150, 150, 150);
+        border-style: solid;
+        background-color: #1a1d23;
+        color: white;
+    }
+    
+    .form-control:focus{
+        box-shadow: none;
+        border: 1px;
+        border-color: rgb(150, 150, 150);
+        border-style: solid;
+        background-color: #1a1d23;
+        color: white;
+        
+    }
+    
+    .sendMail{
+        margin: 1.5rem;
+        margin-right: 0;
+        justify-content: end;
+        display: flex;
+    }
 }
 
-.sendMail{
-    margin: 2rem;
-    margin-right: 0;
-    justify-content: end;
-    display: flex;
-}
+

@@ -1,45 +1,96 @@
 
 
-.descriptionContainerAbout{
-    margin-left: 150px;
-    margin-right: 150px;
-    margin-bottom: 100px;
-    display: grid;
-    padding-top: 3rem;
-}
 
-.descriptionTitle{
-    font-size: 4rem;
-    text-align: center;
-    margin-bottom: 100px;
-    color: white;
-}
 
-.descriptionSubtitle{
-    margin-bottom: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: white;
-}
-
-.nameAndCareer{
-
-    .nameAbout{
-        font-size: 3rem;
+@media (min-width: 500px){
+    .descriptionContainerAbout{
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-bottom: 100px;
+        display: grid;
+        padding-top: 3rem;
     }
-    .careerAbout{
-        font-size: 2rem;
-        color: #609bff;
+    
+    .descriptionTitle{
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 100px;
+        color: white;
+    }
+    
+    .descriptionSubtitle{
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+    }
+    
+    .nameAndCareer{
+    
+        .nameAbout{
+            font-size: 3rem;
+        }
+        .careerAbout{
+            font-size: 2rem;
+            color: #609bff;
+        }
+    }
+    
+    .resumeButton{
+        padding: 1rem;
+        font-size: 25px;
+    }
+    
+    .descriptionAbout{
+        font-size: 1.5rem;
+        color: rgb(225, 225, 225);
     }
 }
 
-.resumeButton{
-    padding: 1rem;
-    font-size: 25px;
-}
 
-.descriptionAbout{
-    font-size: 1.5rem;
-    color: white;
+@media (max-width: 500px){
+    .descriptionContainerAbout{
+        margin-left: 15px;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        margin-top: 1rem;
+    }
+    
+    .descriptionTitle{
+        font-size: 4rem;
+        text-align: center;
+        margin-bottom: 100px;
+        color: white;
+    }
+    
+    .descriptionSubtitle{
+        margin-bottom: 50px;
+        justify-content: space-between;
+        align-items: center;
+        color: white;
+        text-align: center;
+    }
+    
+    .nameAndCareer{
+        margin-bottom: 20px;
+    
+        .nameAbout{
+            font-size: 2rem;
+        }
+        .careerAbout{
+            font-size: 1.5rem;
+            color: #609bff;
+        }
+    }
+    
+    .resumeButton{
+        padding: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    .descriptionAbout{
+        font-size: 1rem;
+        color: rgb(225, 225, 225);
+    }
 }

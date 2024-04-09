@@ -36,33 +36,40 @@ import {
 function App() {
   return (
     <div>
-      <Navbar bg="dark" data-bs-theme="dark" sticky="top" className='navbar'>
+      <Navbar expand="sm" bg="dark" data-bs-theme="dark" sticky="top" className='navbar'>
         <Container>
           <Navbar.Brand href="/" >
             <Image className='logoSize' src={logoDark}/>
           </Navbar.Brand>
-          <Nav >
-            <Nav.Link href="/about" className='leftPaddingNavbarItems'>Sobre mi</Nav.Link>
-            <Nav.Link href="/projects" className='leftPaddingNavbarItems'>Proyectos</Nav.Link>
-            {/* <Nav.Link href="/resources" className='leftPaddingNavbarItems'>Recursos</Nav.Link> */}
-            <Nav.Link href="/contact" className='leftPaddingNavbarItems'>Contacto</Nav.Link>
-          </Nav>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav >
+              <Nav.Link href="/about" className='leftPaddingNavbarItems'>Sobre mi</Nav.Link>
+              <Nav.Link href="/projects" className='leftPaddingNavbarItems'>Proyectos</Nav.Link>
+              {/* <Nav.Link href="/resources" className='leftPaddingNavbarItems'>Recursos</Nav.Link> */}
+              <Nav.Link href="/contact" className='leftPaddingNavbarItems'>Contacto</Nav.Link>
+            </Nav>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
       
-      <Router>
-        <Routes>
-          <Route path="/about" element={<AboutPage/>} />
-          <Route path="/projects" element={<ProjectsPage/>} />
-          <Route path="/projects/simulator" element={<SimulatorProjectPage/>}/>
-          <Route path="/projects/flappy2077" element={<Flappy2077ProjectPage/>}/>
-          <Route path="/projects/flixer" element={<FlixerProjectPage/>}/>
-          <Route path="/projects/mapping" element={<MappingProjectPage/>}/>
-          <Route path="/projects/dockeraid" element={<DockeraidProjectPage/>}/>
-          <Route path="/contact" element={<ContactPage/>} />
-          <Route path="/" element={<HomePage />} />
-        </Routes>
-      </Router>
+
+      <div className='widthRestriction'>
+        <Router>
+          <Routes>
+            <Route path="/about" element={<AboutPage/>} />
+            <Route path="/projects" element={<ProjectsPage/>} />
+            <Route path="/projects/simulator" element={<SimulatorProjectPage/>}/>
+            <Route path="/projects/flappy2077" element={<Flappy2077ProjectPage/>}/>
+            <Route path="/projects/flixer" element={<FlixerProjectPage/>}/>
+            <Route path="/projects/mapping" element={<MappingProjectPage/>}/>
+            <Route path="/projects/dockeraid" element={<DockeraidProjectPage/>}/>
+            <Route path="/contact" element={<ContactPage/>} />
+            <Route path="/" element={<HomePage />} />
+          </Routes>
+        </Router>
+      </div>
+      
 
       <div className='footerContainer'>
         <div className='footerText'>

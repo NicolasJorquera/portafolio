@@ -1,6 +1,7 @@
 
 import { Button } from 'react-bootstrap'
 import '../../assets/about/Description.css'
+import curriculum from '../../assets/images/projects/Nicolas_Curriculum.pdf'
 
 
 function Description() {
@@ -21,9 +22,12 @@ function Description() {
                 </div>
 
                 <div>
-                    <Button className='resumeButton' variant='primary' size='lg'>
-                        Currículum
-                    </Button>
+                    <a href={curriculum} download="Curriculum_Nicolas_Jorquera">
+                        <Button className='resumeButton' variant='white' size='lg'>
+                            Currículum
+                        </Button>
+                    </a>
+                    
                 </div>
                 
             </div>

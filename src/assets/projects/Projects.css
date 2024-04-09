@@ -1,39 +1,88 @@
+@media (min-width: 500px){
+    .projectsPageTitle{
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .projectsSectionContainer{
+        margin-left: 150px;
+        margin-right: 150px;
+        padding-top: 3rem;
+    }
+    
+    .projectsFilter{
+        display: flex;
+        justify-content: start;
+        align-items: start;
+    }
+    
+    .filterName{
+        align-items: start;
+        color: white;
+        font-size: 2rem;
+        margin-right: 3rem;
+    }
+    
+    .filterTags{
+        display: inline-block;
+        gap: 10px;
+    }
 
+    .projectTagFilter{
+        margin: 5px
+    }
+    
+    .projectsFiltered{
+        display: inline-block;
+        flex-wrap: wrap;
+        gap: 3rem;
+        margin-top: 3rem;
+        justify-content: space-between;
+    }
+}
+@media (max-width: 500px){
+    .projectsPageTitle{
+        font-size: 4rem;
+        color: white;
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    
+    .projectsSectionContainer{
+        margin-left: 15px;
+        margin-right: 15px;
+        padding-top: 3rem;
+    }
+    
+    .projectsFilter{
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .filterName{
+        color: white;
+        font-size: 2rem;
+        margin-right: 3rem;
+    }
+    
+    .filterTags{
+        display: inline-block;
+        gap: 10px;
+    }
 
-.projectsPageTitle{
-    font-size: 4rem;
-    color: white;
-    text-align: center;
-    margin-bottom: 3rem;
+    .projectTagFilter{
+        margin: 5px
+    }
+
+    
+    .projectsFiltered{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        margin-top: 3rem;
+        justify-content: center;
+    }
 }
 
-.projectsSectionContainer{
-    margin-left: 150px;
-    margin-right: 150px;
-    padding-top: 3rem;
-}
-
-.projectsFilter{
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.filterName{
-    color: white;
-    font-size: 2rem;
-    margin-right: 3rem;
-}
-
-.filterTags{
-    display: flex;
-    gap: 10px;
-}
-
-.projectsFiltered{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 3rem;
-    margin-top: 3rem;
-    justify-content: space-between;
-}
