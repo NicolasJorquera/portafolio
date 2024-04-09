@@ -79,6 +79,10 @@
         justify-content: end;
         display: flex;
     }
+
+    .input:-internal-autofill-selected {
+        background-color: #1a1d23 !important;
+    }
 }
 
 

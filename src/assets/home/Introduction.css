@@ -75,7 +75,7 @@
         margin-left: 10px;
         line-height: 4rem;
         align-content: space-between;
-        display: grid;
+        display: none;
         overflow: auto;
         color: white;
         .name{
