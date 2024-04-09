@@ -131,7 +131,7 @@
         justify-content: center;
     }
     
-    .video{
+    .videoFlixer{
         border-radius: 25px;
         width: 50%;
     }
@@ -267,9 +267,9 @@
         justify-content: center;
     }
     
-    .video{
+    .videoFlixer{
         border-radius: 25px;
-        width: 50%;
+        width: 30%;
     }
 }
 
