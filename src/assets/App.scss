@@ -8,7 +8,72 @@ $theme-colors: (
 );
 
 @import '~bootstrap/scss/bootstrap.scss';
-
+@media (min-width: 800px){
+  .navbar-expand-sm .navbar-collapse {
+    justify-content: end;
+  }
+  
+  .widthResctriction{
+    max-width: 100%;
+  }
+  
+  .navbar{
+    font-size: 30px;
+  
+    // font-family: "Sarabun Sans", sans-serif;
+    font-weight: 100;
+    width: 100%;
+    max-width: 100%;
+    text-align: end;
+    justify-content: space-around;
+  
+    .logoSize{
+      height: 65px;
+      width: 65px;
+    }
+  
+    .leftPaddingNavbarItems{
+      padding-left: 50px !important;
+    }
+  }
+  
+  
+  
+  .sectionsContainers{
+    // font-family: "Sarabun", sans-serif ;
+    font-weight: 100;
+    background-color: #1a1d23;
+    color: #1a1d23;
+  }
+  
+  
+  .footerContainer{
+    color: rgb(254, 255, 248);
+    background-color: rgb(59, 59, 59);
+    padding-left: 150px;
+    padding-right: 150px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footerText{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .footerLinks{
+    display: flex;
+    gap: 10px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none; /* no underline */
+  }
+}
 
 
 @media (max-width: 800px){
@@ -25,70 +90,73 @@ $theme-colors: (
     margin-left: 10px;
     margin-right: 10px;
   }
+
+  .navbar-expand-sm .navbar-collapse {
+    justify-content: end;
+  }
+  
+  .widthResctriction{
+    max-width: 100%;
+  }
+  
+  .navbar{
+    font-size: 30px;
+  
+    // font-family: "Sarabun Sans", sans-serif;
+    font-weight: 100;
+    width: 100%;
+    max-width: 100%;
+    text-align: end;
+    justify-content: space-around;
+  
+    .logoSize{
+      height: 65px;
+      width: 65px;
+    }
+  
+    .leftPaddingNavbarItems{
+      padding-left: 50px !important;
+    }
+  }
+  
+  
+  
+  .sectionsContainers{
+    // font-family: "Sarabun", sans-serif ;
+    font-weight: 100;
+    background-color: #1a1d23;
+    color: #1a1d23;
+  }
+  
+  
+  .footerContainer{
+    color: rgb(254, 255, 248);
+    background-color: rgb(59, 59, 59);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .footerText{
+    font-size: 1.2rem;
+    font-weight: 400;
+  }
+  
+  .footerLinks{
+    display: flex;
+    gap: 10px;
+  }
+  
+  a {
+    color: inherit;
+    text-decoration: none; /* no underline */
+  }
   
 }
 
-.navbar-expand-sm .navbar-collapse {
-  justify-content: end;
-}
-
-.widthResctriction{
-  max-width: 100%;
-}
-
-.navbar{
-  font-size: 30px;
-
-  // font-family: "Sarabun Sans", sans-serif;
-  font-weight: 100;
-  width: 100%;
-  max-width: 100%;
-  text-align: end;
-  justify-content: space-around;
-
-  .logoSize{
-    height: 65px;
-    width: 65px;
-  }
-
-  .leftPaddingNavbarItems{
-    padding-left: 50px !important;
-  }
-}
 
 
-
-.sectionsContainers{
-  // font-family: "Sarabun", sans-serif ;
-  font-weight: 100;
-  background-color: #1a1d23;
-  color: #1a1d23;
-}
-
-
-.footerContainer{
-  color: rgb(254, 255, 248);
-  background-color: rgb(59, 59, 59);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footerText{
-  font-size: 1.2rem;
-  font-weight: 400;
-}
-
-.footerLinks{
-  display: flex;
-  gap: 10px;
-}
-
-a {
-  color: inherit;
-  text-decoration: none; /* no underline */
-}

@@ -10,7 +10,7 @@ import mappingProjectPDF from '../../../assets/images/projects/M19615449-3.pdf'
 const project = {
     projectName: 'Mapeo tridimensional de entornos',
     imageFile: mappingProject,
-    tags: ['ROS', 'Matlab', 'C', 'C++', 'Python', 'ROS', 'Matlab', 'C', 'C++', 'Python'],
+    tags: ['ROS', 'Matlab', 'C', 'C++', 'Python'],
     projectPage: 'mapping'
 }
 

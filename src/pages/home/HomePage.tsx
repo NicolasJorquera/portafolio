@@ -8,7 +8,7 @@ import Technologies from "./Technologies";
 
 function HomePage() {
     return (
-        <div className='sectionsContainers'>
+      <div className='sectionsContainers'>
         <Introduction/>
         <Projects/>
         {/* <Technologies/> */}

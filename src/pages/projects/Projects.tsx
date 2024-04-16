@@ -101,41 +101,48 @@ function Projects() {
         
 
         setProjectsFiltered(pjts)
+        setTechnologies([])
+        getTechnologies()
     }
 
 
-    const handleTechTagClick = (t: string) => {
+    function handleTechTagClick(t: string) {
         let tech = [...technologiesSelected]
-
+    
         if (tech.includes(t)) {
             let indexToDelete = tech.indexOf(t)
             tech.splice(indexToDelete, 1)
-        }else{
-            if (t == 'All') {
+        } else {
+            if (t === 'All') {
                 tech = ['All']
-            }else{
+            } else {
                 tech.push(t)
             }
-            
         }
-
-        if (tech.length > 1) {
+    
+        if (tech.length > 1 && tech.includes('All')) {
+            // Si hay más de una tecnología seleccionada y 'All' está entre ellas, se elimina 'All'
             let indexToDelete = tech.indexOf('All')
-            if (indexToDelete != -1) {
-                tech.splice(indexToDelete, 1)
-            }
-            
-        }else if( tech.length == 0) {
+            tech.splice(indexToDelete, 1)
+        } else if (tech.length === 0) {
+            // Si no hay tecnología seleccionada, se añade 'All'
             tech.push('All')
         }
-
-        
-
+    
         setTechnologiesSelected(tech)
-
-        
-
     }
+
+    function updateButtonVariant (tech: string) : string {
+
+        if (technologiesSelected.includes(tech)) {
+            return 'secondary'
+        }
+        else{
+            return 'outline-secondary'
+        }
+         
+    }
+
 
 
 
@@ -149,7 +156,7 @@ function Projects() {
                     {
                         technologies.map((tech) => {
                             return(
-                                <Button onClick={()=>handleTechTagClick(tech)}  variant= {technologiesSelected.includes(tech)? 'secondary' : 'outline-secondary'} className='projectTagFilter'>
+                                <Button onClick={ () => handleTechTagClick(tech)}  variant= {updateButtonVariant(tech)} className='projectTagFilter'>
                                     {tech}
                                 </Button>
                             )
