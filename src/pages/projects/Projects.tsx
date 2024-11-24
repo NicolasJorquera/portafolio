@@ -81,9 +81,7 @@ function Projects() {
         getTechnologies()
     }, [])
 
-    useEffect(()=>{
-        filterProjects()
-    }, [technologiesSelected])
+    
 
 
     const filterProjects = () => {
@@ -112,6 +110,9 @@ function Projects() {
         getTechnologies()
     }
 
+    useEffect(()=>{
+        filterProjects()
+    })
 
     function handleTechTagClick(t: string) {
         let tech = [...technologiesSelected]

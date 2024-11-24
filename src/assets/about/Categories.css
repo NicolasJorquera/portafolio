@@ -77,6 +77,11 @@
     font-size: 1.5rem;
     color: rgb(225, 225, 225);
   }
+
+  .bulletedPoint{
+    margin-left: 0rem;
+    margin-right: 0.5rem;
+  }
 }
 
 @media (max-width: 800px){
