@@ -1,7 +1,7 @@
 
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/FlixerProjectPage.css";
-import flixerProject from '../../../assets/images/projects/flixerProject.png'
+import flixerProject from '../../../assets/images/projects/flixerProject.webp'
 import flixerProjectVideo from '../../../assets/images/projects/flixerProject.mp4'
 
 
@@ -22,7 +22,7 @@ function FlixerProjectPage() {
                 <div className="headerTags">
                     {
                         project.tags.map((tag, index)=>{
-                            if (index == project.tags.length - 1) {
+                            if (index === project.tags.length - 1) {
                                 return(
                                     <div>
                                         {tag.toUpperCase()}

@@ -10,7 +10,7 @@ interface aboutCategorieItemProps {
 }
 
 const timeLapse = (timeLapse) => {
-    if (timeLapse.length == 2) {
+    if (timeLapse.length === 2) {
         return(
             <>
                             

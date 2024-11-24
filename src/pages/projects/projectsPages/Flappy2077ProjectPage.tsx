@@ -1,7 +1,7 @@
 
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/Flappy2077ProjectPage.css";
-import flappy2077Project from '../../../assets/images/projects/flappy2077Project.png'
+import flappy2077Project from '../../../assets/images/projects/flappy2077Project.webp'
 import flappy2077ProjectVideo from '../../../assets/images/projects/flappy2077Project.mp4'
 
 
@@ -22,7 +22,7 @@ function Flappy2077ProjectPage() {
                 <div className="headerTags">
                     {
                         project.tags.map((tag, index)=>{
-                            if (index == project.tags.length - 1) {
+                            if (index === project.tags.length - 1) {
                                 return(
                                     <div>
                                         {tag.toUpperCase()}

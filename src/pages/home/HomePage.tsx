@@ -1,6 +1,6 @@
 import Introduction from "./Introduction";
 import Projects from "./Projects";
-import Technologies from "./Technologies";
+// import Technologies from "./Technologies";
 
 
 

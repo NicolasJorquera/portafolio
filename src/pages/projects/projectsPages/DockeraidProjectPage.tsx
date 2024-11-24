@@ -1,7 +1,7 @@
 
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/DockeraidProjectPage.css";
-import dockeraidProject from '../../../assets/images/projects/dockeraidProject.png'
+import dockeraidProject from '../../../assets/images/projects/dockeraidProject.webp'
 import dockeraidProjectVideo from '../../../assets/images/projects/dockeraidProject.mp4'
 
 
@@ -22,7 +22,7 @@ function DockeraidProjectPage() {
                 <div className="headerTags">
                     {
                         project.tags.map((tag, index)=>{
-                            if (index == project.tags.length - 1) {
+                            if (index === project.tags.length - 1) {
                                 return(
                                     <div>
                                         {tag.toUpperCase()}

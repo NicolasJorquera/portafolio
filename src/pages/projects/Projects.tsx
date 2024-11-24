@@ -3,15 +3,16 @@
 
 import "../../assets/projects/Projects.css"
 
-import flixerProject from '../../assets/images/projects/flixerProject.png'
-import mappingProject from '../../assets/images/projects/mappingProject.png'
+import flixerProject from '../../assets/images/projects/flixerProject.webp'
+import mappingProject from '../../assets/images/projects/mappingProject.webp'
 // import mappingPDF from '../assets/images/projects/M19615449-3.pdf'
-import simulatorProject from '../../assets/images/projects/simulatorProject.png'
-import { useEffect, useMemo, useState } from "react"
+import simulatorProject from '../../assets/images/projects/simulatorProject.webp'
+import { useEffect, useState } from "react"
 import { Button } from "react-bootstrap"
 import ProjectPreview from "../../components/ProjectPreview"
-import flappy2077Project from '../../assets/images/projects/flappy2077Project.png'
-import dockeraidProject from '../../assets/images/projects/dockeraidProject.png'
+import flappy2077Project from '../../assets/images/projects/flappy2077Project.webp'
+import dockeraidProject from '../../assets/images/projects/dockeraidProject.webp'
+import transactionflowProject from '../../assets/images/projects/transactionFlowProject.webp'
 
 
 const projects: any[] = [
@@ -45,6 +46,12 @@ const projects: any[] = [
         imageFile: dockeraidProject,
         tags: ['Typescript', 'React', 'Docker', 'AWS'],
         projectPage: 'dockeraid'
+    },
+    {
+        projectName: 'Flujo transaccional',
+        imageFile: transactionflowProject,
+        tags: ['Typescript', 'AWS', 'Python'],
+        projectPage: 'transactionflow'
     }
 
 ]
@@ -84,7 +91,7 @@ function Projects() {
 
 
         
-        if (technologiesSelected[0] == 'All') {
+        if (technologiesSelected[0] === 'All') {
             pjts = projects
         }else{
             projects.forEach((project)=>{

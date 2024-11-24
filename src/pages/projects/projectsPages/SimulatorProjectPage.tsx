@@ -1,7 +1,7 @@
 
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/SimulatorProjectPage.css";
-import simulatorProject from '../../../assets/images/projects/simulatorProject.png'
+import simulatorProject from '../../../assets/images/projects/simulatorProject.webp'
 import simulatorProjectVideo from '../../../assets/images/projects/simulatorProject.mp4'
 
 
@@ -22,7 +22,7 @@ function SimulatorProjectPage() {
                 <div className="headerTags">
                     {
                         project.tags.map((tag, index)=>{
-                            if (index == project.tags.length - 1) {
+                            if (index === project.tags.length - 1) {
                                 return(
                                     <div>
                                         {tag.toUpperCase()}

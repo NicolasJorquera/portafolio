@@ -1,7 +1,7 @@
 
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/MappingProjectPage.css";
-import mappingProject from '../../../assets/images/projects/mappingProject.png'
+import mappingProject from '../../../assets/images/projects/mappingProject.webp'
 import mappingProjectVideo from '../../../assets/images/projects/mappingProject.mp4'
 import mappingProjectPDF from '../../../assets/images/projects/M19615449-3.pdf'
 
@@ -23,7 +23,7 @@ function MappingProjectPage() {
                 <div className="headerTags">
                     {
                         project.tags.map((tag, index)=>{
-                            if (index == project.tags.length - 1) {
+                            if (index === project.tags.length - 1) {
                                 return(
                                     <div>
                                         {tag.toUpperCase()}

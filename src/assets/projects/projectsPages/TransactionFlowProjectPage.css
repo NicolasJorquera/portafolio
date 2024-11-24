@@ -1,5 +1,5 @@
 @media (min-width: 800px) {
-  .dockeraidProjectPageHeader {
+  .transactionFlowProjectPageHeader {
     color: white;
     justify-content: center;
     display: grid;
@@ -33,30 +33,30 @@
     font-size: 5rem;
   }
 
-  .dockeraidProjectLink {
+  .transactionFlowProjectLink {
     padding: 0.7rem;
     font-size: 1.2rem;
   }
 
-  .dockeraidProjectLinks {
+  .transactionFlowProjectLinks {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
 
-  .dockeraidProjectImageContainer {
+  .transactionFlowProjectImageContainer {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
   }
 
-  .dockeraidProjectImage {
+  .transactionFlowProjectImage {
     width: 65%;
     border-radius: 20px !important;
   }
 
-  .dockeraidProjectOverviewAndChapters {
+  .transactionFlowProjectOverviewAndChapters {
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 50px;
@@ -67,50 +67,50 @@
     color: rgb(225, 225, 225);
   }
 
-  .dockeraidProjectOverview {
+  .transactionFlowProjectOverview {
     width: 50%;
   }
 
-  .dockeraidProjectOverviewTitle {
+  .transactionFlowProjectOverviewTitle {
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1rem;
     color: white;
   }
 
-  .dockeraidProjectOverviewText {
+  .transactionFlowProjectOverviewText {
     font-size: 1.5rem;
   }
 
-  .dockeraidProjectChapters {
+  .transactionFlowProjectChapters {
     width: 50%;
     text-align: end;
   }
 
-  .dockeraidProjectChaptersTitle {
+  .transactionFlowProjectChaptersTitle {
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1rem;
     color: white;
   }
 
-  .dockeraidProjectChaptersText {
+  .transactionFlowProjectChaptersText {
     font-size: 2rem;
   }
 
-  .dockeraidProjectObjective {
+  .transactionFlowProjectObjective {
     margin-left: 150px;
     margin-right: 150px;
     margin-top: 100px;
   }
 
-  .dockeraidProjectObjectiveTitle {
+  .transactionFlowProjectObjectiveTitle {
     color: white;
     font-size: 3rem;
     font-weight: 400;
   }
 
-  .dockeraidProjectObjectiveText {
+  .transactionFlowProjectObjectiveText {
     color: rgb(225, 225, 225);
     font-size: 1.5rem;
 
@@ -131,7 +131,7 @@
 }
 
 @media (max-width: 800px) {
-  .dockeraidProjectPageHeader {
+  .transactionFlowProjectPageHeader {
     color: white;
     justify-content: center;
     display: grid;
@@ -166,30 +166,30 @@
     line-height: 3rem;
   }
 
-  .dockeraidProjectLink {
+  .transactionFlowProjectLink {
     padding: 0.7rem;
     font-size: 1.2rem;
   }
 
-  .dockeraidProjectLinks {
+  .transactionFlowProjectLinks {
     margin-top: 1rem;
     display: flex;
     justify-content: center;
     gap: 1rem;
   }
 
-  .dockeraidProjectImageContainer {
+  .transactionFlowProjectImageContainer {
     display: flex;
     justify-content: center;
     margin-top: 2rem;
   }
 
-  .dockeraidProjectImage {
+  .transactionFlowProjectImage {
     width: 65%;
     border-radius: 20px !important;
   }
 
-  .dockeraidProjectOverviewAndChapters {
+  .transactionFlowProjectOverviewAndChapters {
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 50px;
@@ -197,7 +197,7 @@
     color: rgb(225, 225, 225);
   }
 
-  .dockeraidProjectOverviewTitle {
+  .transactionFlowProjectOverviewTitle {
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 400;
@@ -205,40 +205,40 @@
     color: white;
   }
 
-  .dockeraidProjectOverviewText {
+  .transactionFlowProjectOverviewText {
     font-size: 1rem;
   }
 
-  .dockeraidProjectChapters {
+  .transactionFlowProjectChapters {
     text-align: end;
     display: none;
   }
 
-  .dockeraidProjectChaptersTitle {
+  .transactionFlowProjectChaptersTitle {
     font-size: 3rem;
     font-weight: 400;
     margin-bottom: 1rem;
     color: white;
   }
 
-  .dockeraidProjectChaptersText {
+  .transactionFlowProjectChaptersText {
     font-size: 2rem;
   }
 
-  .dockeraidProjectObjective {
+  .transactionFlowProjectObjective {
     margin-left: 15px;
     margin-right: 15px;
     margin-top: 25px;
   }
 
-  .dockeraidProjectObjectiveTitle {
+  .transactionFlowProjectObjectiveTitle {
     color: white;
     font-size: 2rem;
     line-height: 2rem;
     font-weight: 400;
   }
 
-  .dockeraidProjectObjectiveText {
+  .transactionFlowProjectObjectiveText {
     color: rgb(225, 225, 225);
     font-size: 1rem;
 

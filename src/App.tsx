@@ -11,6 +11,7 @@ import Flappy2077ProjectPage from './pages/projects/projectsPages/Flappy2077Proj
 import FlixerProjectPage from './pages/projects/projectsPages/FlixerProjectPage';
 import MappingProjectPage from './pages/projects/projectsPages/MappingProjectPage';
 import DockeraidProjectPage from './pages/projects/projectsPages/DockeraidProjectPage';
+import TransactionFlowProjectPage from './pages/projects/projectsPages/TransactionFlowProjectPage';
 
 
 
@@ -28,8 +29,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import {
   BrowserRouter as Router,
   Routes,
-  Route,
-  Link
+  Route
 } from "react-router-dom";
 
 
@@ -64,6 +64,7 @@ function App() {
             <Route path="/projects/flixer" element={<FlixerProjectPage/>}/>
             <Route path="/projects/mapping" element={<MappingProjectPage/>}/>
             <Route path="/projects/dockeraid" element={<DockeraidProjectPage/>}/>
+            <Route path="/projects/transactionFlow" element={<TransactionFlowProjectPage/>} />
             <Route path="/contact" element={<ContactPage/>} />
             <Route path="/" element={<HomePage />} />
           </Routes>

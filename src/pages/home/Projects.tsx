@@ -2,17 +2,17 @@ import '../../assets/home/Projects.css'
 
 import React from 'react';
 
-import Card from 'react-bootstrap/Card';
-import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
+// import Card from 'react-bootstrap/Card';
+// import Modal from 'react-bootstrap/Modal';
+// import Button from 'react-bootstrap/Button';
+// import Image from 'react-bootstrap/Image';
 
 import ProjectPreview from '../../components/ProjectPreview';
 
-import flixerProject from '../../assets/images/projects/flixerProject.png'
-import mappingProject from '../../assets/images/projects/mappingProject.png'
+import flixerProject from '../../assets/images/projects/flixerProject.webp'
+// import mappingProject from '../../assets/images/projects/mappingProject.webp'
 // import mappingPDF from '../assets/images/projects/M19615449-3.pdf'
-import simulatorProject from '../../assets/images/projects/simulatorProject.png'
+import simulatorProject from '../../assets/images/projects/simulatorProject.webp'
 // import flappy2077Project from '../assets/images/projects/flappy2077Project.mp4'
 
 

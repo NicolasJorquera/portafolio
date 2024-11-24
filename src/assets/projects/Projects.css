@@ -1,3 +1,6 @@
+
+
+
 @media (min-width: 800px){
     .projectsPageTitle{
         font-size: 4rem;
@@ -85,5 +88,23 @@
         margin-top: 3rem;
         justify-content: center;
     }
+}
+
+
+@media (hover: none) {
+
+
+
+    .btn:focus {
+      background-color: rgb(200, 200, 200) !important;
+      color: #1a1d23 !important;
+    }
+
+    .btn:not(:focus) {
+        background-color: #1a1d23 !important;
+        color: rgb(200, 200, 200) !important;
+      }
+
+    
 }
 
