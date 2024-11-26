@@ -4,6 +4,7 @@ import React from 'react';
 import HomePage from './pages/home/HomePage';
 import AboutPage from './pages/about/AboutPage';
 import ProjectsPage from './pages/projects/ProjectsPage';
+import ResourcesPage from './pages/resources/ResourcesPage';
 import ContactPage from './pages/contact/ContactPage';
 
 import SimulatorProjectPage from './pages/projects/projectsPages/SimulatorProjectPage';
@@ -46,7 +47,7 @@ function App() {
             <Nav >
               <Nav.Link href="/about" className='leftPaddingNavbarItems'>Sobre mi</Nav.Link>
               <Nav.Link href="/projects" className='leftPaddingNavbarItems'>Proyectos</Nav.Link>
-              {/* <Nav.Link href="/resources" className='leftPaddingNavbarItems'>Recursos</Nav.Link> */}
+              <Nav.Link href="/resources" className='leftPaddingNavbarItems'>Recursos</Nav.Link>
               <Nav.Link href="/contact" className='leftPaddingNavbarItems'>Contacto</Nav.Link>
             </Nav>
           </Navbar.Collapse>
@@ -65,6 +66,7 @@ function App() {
             <Route path="/projects/mapping" element={<MappingProjectPage/>}/>
             <Route path="/projects/dockeraid" element={<DockeraidProjectPage/>}/>
             <Route path="/projects/transactionFlow" element={<TransactionFlowProjectPage/>} />
+            <Route path="/resources" element={<ResourcesPage/>}></Route>
             <Route path="/contact" element={<ContactPage/>} />
             <Route path="/" element={<HomePage />} />
           </Routes>
