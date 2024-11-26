@@ -79,10 +79,10 @@ function App() {
           Sígueme en mis redes sociales:
         </div>
         <div className='footerLinks'>
-          <a href='https://github.com/NicolasJorquera' target="_blank">
+          <a href='https://github.com/NicolasJorquera' target="_blank" rel="noreferrer">
           <TbBrandGithubFilled size={30} />
           </a>
-          <a  href='https://www.linkedin.com/in/nicolas-jorquera-martinez-70526514b/' target="_blank">
+          <a  href='https://www.linkedin.com/in/nicolas-jorquera-martinez-70526514b/' target="_blank" rel="noreferrer">
           <FaLinkedinIn size={30}/>
           </a>
           

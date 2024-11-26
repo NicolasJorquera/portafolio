@@ -1,7 +1,6 @@
 
 import React from 'react';
 import Button from 'react-bootstrap/Button';
-import Image from 'react-bootstrap/Image';
 
 
 
@@ -9,7 +8,8 @@ import Image from 'react-bootstrap/Image';
 interface projectPreviewProps {
     resourceName: string,
     resourceDescription: string,
-    resourceLink: string
+    resourceLink: string,
+    resourceColorCard: string
 
 }
 
@@ -17,20 +17,25 @@ function ResourceCard(props: projectPreviewProps) {
 
 
     return (
-        <div className='projectContainer'>
-            <a href={props.resourceLink} target='_blank' rel="noreferrer">
+        <div className='resourceCard' style={{borderColor: props.resourceColorCard}} /*style={{ backgroundColor: props.resourceColorCard }}*/>
 
-                <div className='projectDescription'>
-                    <div className='projectTitle'>
-                        {props.resourceName}
-                    </div>
-                    <div className='resourceDescription'>
+
+            <div className='resourceCardContent'>
+                <div className='resourceCardTitle'>
+                    {props.resourceName}
+                </div>
+                <div className='resourceCardInfo'>
+                    <div className='resourceCardDescription'>
                         {props.resourceDescription}
                     </div>
+                    <a href={props.resourceLink} target='_blank' rel="noreferrer">
+                        <Button variant='white' onClick={() => { }}>Entrar</Button>
+                    </a>
                 </div>
+            </div>
 
-            </a>
-        </div>
+
+        </div >
     )
 }
 

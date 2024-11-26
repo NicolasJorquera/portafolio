@@ -1,0 +1,64 @@
+
+@media (min-width: 800px){
+
+    .resourcesSectionContainer{
+        margin-left: 150px;
+        margin-right: 150px;
+        padding-top: 3rem;
+    }
+
+    .columnResources{
+        display: flex;
+        justify-content: center;
+    }
+
+    .resourceSectionContainer{
+        text-align: center;
+        
+    }
+
+    .resourceSectionTitle{
+        color: white;
+        font-weight: 100;
+        font-size: 2rem
+    }
+
+    .resourceColumn{
+        justify-content: center;
+    }
+
+    .resourceCard{
+        margin: 25px;
+        padding: 20px;
+        color: white;
+        font-weight: 100;
+        border-width: 1.5px;
+        border-style: solid;
+        border-radius: 15px;
+    }
+
+    .resourceCardContent{
+        display: block;
+    }
+
+    .resourceCardTitle{
+        display: flex;
+        font-size: 1.5rem;
+        padding-bottom: 5px;
+        border-bottom: solid;
+        border-width: 0.5px;
+    }
+
+    .resourceCardInfo{
+        margin-top: 20px;
+        display: flex;
+        align-items:center;
+    }
+    .resourceCardDescription{
+        text-align: left;
+        margin-right: 20px;
+    }
+}
+@media (max-width: 800px){
+}
+
