@@ -8,8 +8,7 @@ import Button from 'react-bootstrap/Button';
 interface projectPreviewProps {
     resourceName: string,
     resourceDescription: string,
-    resourceLink: string,
-    resourceColorCard: string
+    resourceLink: string
 
 }
 
@@ -17,7 +16,7 @@ function ResourceCard(props: projectPreviewProps) {
 
 
     return (
-        <div className='resourceCard' style={{borderColor: props.resourceColorCard}} /*style={{ backgroundColor: props.resourceColorCard }}*/>
+        <div className='resourceCard' >
 
 
             <div className='resourceCardContent'>
