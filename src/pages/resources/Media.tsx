@@ -86,6 +86,10 @@ function Media() {
     useEffect(() => {
         const container = containerRef.current;
         if (container) {
+            // Establecer scroll inicial al centro
+            container.scrollTop = (container.scrollHeight - container.clientHeight) / 2;
+    
+            // Escuchar el evento de scroll
             container.addEventListener("scroll", handleScroll);
             handleScroll(); // Aplicar efecto inicial
         }

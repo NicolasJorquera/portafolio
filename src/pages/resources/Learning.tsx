@@ -14,6 +14,46 @@ const resources: any[] = [
         resourceName: 'Algoritmos de ordenamiento',
         resourceDescription: 'Tipos de algoritmos de ordenamiento de una lista.',
         resourceLink: 'https://colab.research.google.com/drive/1xQ7ZYLEYbQyzGORNPPAX2j8FIQ6JUpxV?usp=sharing'
+    },
+    {
+        resourceName: 'Introducción a la algebra lineal',
+        resourceDescription: 'Algebra lineal básica orientada a Machine Learning.',
+        resourceLink: 'https://colab.research.google.com/drive/12zkQY-lgwX2gh_YUvZGqEF6Wioe63XJP?usp=sharing'
+    },
+    {
+        resourceName: 'Algebra lineal',
+        resourceDescription: 'Algebra lineal orientada a Machine Learning.',
+        resourceLink: 'https://colab.research.google.com/drive/1k2eCGLE9FkazXtL_oDO6rKlRzNjhUJSX?usp=sharing'
+    },
+    {
+        resourceName: 'Cálculo parte 1',
+        resourceDescription: 'Primera parte de cálculo orientado a Machine Learning.',
+        resourceLink: 'https://colab.research.google.com/drive/1famrubh_WfHa6WcRmihzQyJXfJuaKsma?usp=sharing'
+    },
+    {
+        resourceName: 'Cálculo parte 2',
+        resourceDescription: 'Segunda parte de cálculo orientado a Machine Learning.',
+        resourceLink: 'https://colab.research.google.com/drive/1JJrvBy99pwliNm3tWoznQ5J8fRL4LEB0?usp=sharing'
+    },
+    {
+        resourceName: 'Probabilidad',
+        resourceDescription: 'Probabilidad orientada a Machine Learning.',
+        resourceLink: 'https://colab.research.google.com/drive/18Q1oxi9C-xsl5u6s9JS8LSbMr7_3Ifun?usp=sharing'
+    },
+    {
+        resourceName: 'Estadística',
+        resourceDescription: 'Estadística orientada a Machine Learning.',
+        resourceLink: 'https://colab.research.google.com/drive/1Fbu8BQ8qRjS0SJP5cMXYlmOeYH3q7t6K?usp=sharing'
+    },
+    {
+        resourceName: 'Estructuras de datos',
+        resourceDescription: 'Estructuras de datos orientadas a Machine Learning.',
+        resourceLink: 'https://colab.research.google.com/drive/13udilvNEte-Zpm7Hvp6OuKFjzM6681w4?usp=sharing'
+    },
+    {
+        resourceName: 'Optimización',
+        resourceDescription: 'Optimización orientada a Machine Learning.',
+        resourceLink: 'https://colab.research.google.com/drive/1xdF1TooofKQ8bIgXVrfmDd7EuDBSHNkU?usp=sharing'
     }
 ]
 
@@ -80,6 +120,10 @@ function Learning() {
     useEffect(() => {
         const container = containerRef.current;
         if (container) {
+            // Establecer scroll inicial al centro
+            container.scrollTop = (container.scrollHeight - container.clientHeight) / 2;
+    
+            // Escuchar el evento de scroll
             container.addEventListener("scroll", handleScroll);
             handleScroll(); // Aplicar efecto inicial
         }
