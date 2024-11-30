@@ -15,6 +15,7 @@
         cursor: pointer;
         align-self: center;
         position: relative;
+        width: 600px;
     }
 
     .columnTitleResourcesText{
@@ -48,8 +49,8 @@
     .resourceSectionContainer{
         text-align: center;
         justify-content: end;
-        padding-top: 50%;
-        padding-bottom: 50%;
+        padding-top: 40%;
+        padding-bottom: 40%;
         overflow-y:auto;
         scrollbar-width: none;
     }
@@ -108,11 +109,11 @@
     .resourceCardInfo{
         margin-top: 20px;
         display: flex;
-        align-items:center;
+        justify-content: space-between;
     }
     .resourceCardDescription{
         text-align: left;
-        margin-right: 20px;
+        padding-right: 20px;
         font-size: 1.2rem;
     }
 }
@@ -162,7 +163,7 @@
     .resourceSectionContainer{
         text-align: center;
         justify-content: end;
-        padding-top: 10%;
+        /* padding-top: 10%; */
     }
 
     .resourceItem {
@@ -196,12 +197,12 @@
     .resourceCardInfo{
         margin-top: 10px;
         display: flex;
-        align-items:center;
+        justify-content: space-between;
     }
     .resourceCardDescription{
         text-align: left;
-        margin-right: 20px;
         font-size: 0.8rem;
+        padding-right: 20px;
     }
 }
 

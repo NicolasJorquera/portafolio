@@ -28,7 +28,7 @@ function ResourceCard(props: projectPreviewProps) {
                         {props.resourceDescription}
                     </div>
                     <a href={props.resourceLink} target='_blank' rel="noreferrer">
-                        <Button variant='white' onClick={() => { }}>Entrar</Button>
+                        <Button /*variant='white'*/ onClick={() => { }}>Entrar</Button>
                     </a>
                 </div>
             </div>

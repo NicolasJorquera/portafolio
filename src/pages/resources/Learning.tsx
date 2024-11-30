@@ -93,20 +93,21 @@ function Learning() {
         // Añadir la clase "scaled" al item más cercano al centro
         if (closestItem) {
             closestItem.classList.add("scaled");
+            closestItem.classList.remove("faded1", "faded2", "faded3");
         }
     
         // Asignar las clases de fade a los demás ítems
         items.forEach((item) => {
             const element = item as HTMLElement;
-            if (element === closestItem) return; 
+            if (element === closestItem) return;
 
             const itemCenter = element.offsetTop + element.offsetHeight / 2;
             const distance = Math.abs(containerCenter - itemCenter);
             const maxDistance = container.clientHeight / 2;
-    
-            if (distance < maxDistance / 3) {
+
+            if (distance < maxDistance / 2) {
                 element.classList.add("faded1");
-            } else if (distance < (maxDistance * 2) / 3) {
+            } else if (distance < (maxDistance * 2) / 2) {
                 element.classList.add("faded2");
             } else {
                 element.classList.add("faded3");

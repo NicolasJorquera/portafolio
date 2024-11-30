@@ -18,6 +18,36 @@ const resources: any[] = [
         resourceName: 'Ceremonia de titulación',
         resourceDescription: 'Ceremonia en la que se obtiene el grado de Ingeniero Civil Electrónica.',
         resourceLink: ''
+    },
+    {
+        resourceName: 'Algoritmo Bug para planificación de trayectorias',
+        resourceDescription: 'Simulación de un robot ocupando el algoritmo bug para llegar al punto final.',
+        resourceLink: 'https://www.youtube.com/playlist?list=PLJ2qBH-Q0nmlRSAX4Ra2xzhF8KIj2gYbp'
+    },
+    {
+        resourceName: 'Ceremonia de titulación',
+        resourceDescription: 'Ceremonia en la que se obtiene el grado de Ingeniero Civil Electrónica.',
+        resourceLink: ''
+    },
+    {
+        resourceName: 'Algoritmo Bug para planificación de trayectorias',
+        resourceDescription: 'Simulación de un robot ocupando el algoritmo bug para llegar al punto final.',
+        resourceLink: 'https://www.youtube.com/playlist?list=PLJ2qBH-Q0nmlRSAX4Ra2xzhF8KIj2gYbp'
+    },
+    {
+        resourceName: 'Ceremonia de titulación',
+        resourceDescription: 'Ceremonia en la que se obtiene el grado de Ingeniero Civil Electrónica.',
+        resourceLink: ''
+    },
+    {
+        resourceName: 'Algoritmo Bug para planificación de trayectorias',
+        resourceDescription: 'Simulación de un robot ocupando el algoritmo bug para llegar al punto final.',
+        resourceLink: 'https://www.youtube.com/playlist?list=PLJ2qBH-Q0nmlRSAX4Ra2xzhF8KIj2gYbp'
+    },
+    {
+        resourceName: 'Ceremonia de titulación',
+        resourceDescription: 'Ceremonia en la que se obtiene el grado de Ingeniero Civil Electrónica.',
+        resourceLink: ''
     }
 ]
 
@@ -59,6 +89,7 @@ function Media() {
         // Añadir la clase "scaled" al item más cercano al centro
         if (closestItem) {
             closestItem.classList.add("scaled");
+            closestItem.classList.remove("faded1", "faded2", "faded3");
         }
 
         // Asignar las clases de fade a los demás ítems
@@ -70,9 +101,9 @@ function Media() {
             const distance = Math.abs(containerCenter - itemCenter);
             const maxDistance = container.clientHeight / 2;
 
-            if (distance < maxDistance / 3) {
+            if (distance < maxDistance / 2) {
                 element.classList.add("faded1");
-            } else if (distance < (maxDistance * 2) / 3) {
+            } else if (distance < (maxDistance * 2) / 2) {
                 element.classList.add("faded2");
             } else {
                 element.classList.add("faded3");
