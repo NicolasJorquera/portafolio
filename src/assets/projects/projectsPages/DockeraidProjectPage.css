@@ -124,9 +124,10 @@
     justify-content: center;
   }
 
-  .video {
+  .dockeraidProjectVideo {
     border-radius: 25px;
-    width: 50%;
+    width: 820px;
+    height: 393px;
   }
 }
 
@@ -252,8 +253,9 @@
     justify-content: center;
   }
 
-  .video {
+  .dockeraidProjectVideo {
     border-radius: 25px;
-    width: 50%;
+    width: 300px;
+    height: 143px;
   }
 }

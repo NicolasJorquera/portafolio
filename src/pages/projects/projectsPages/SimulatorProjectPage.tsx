@@ -165,9 +165,12 @@ function SimulatorProjectPage() {
             </div>
 
             <div className="videoContainer">
-                    <video className="video" src={simulatorProjectVideo} autoPlay muted loop>
-
-                    </video>
+                    <iframe
+                        src={`https://www.youtube.com/embed/KJBjQNAJEwI?autoplay=1&loop=1&controls=0&mute=1&playlist=KJBjQNAJEwI`}
+                        allow="autoplay; encrypted-media"
+                        title="YouTube Video as GIF"
+                        className="simulatorProjectVideo"
+                    ></iframe>
             </div>
             
         </div>

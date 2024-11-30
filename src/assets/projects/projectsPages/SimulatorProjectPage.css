@@ -124,9 +124,10 @@
     justify-content: center;
   }
 
-  .video {
+  .simulatorProjectVideo {
     border-radius: 25px;
-    width: 50%;
+    width: 670px;
+    height: 385px;
   }
 }
 
@@ -252,8 +253,9 @@
     justify-content: center;
   }
 
-  .video {
+  .simulatorProjectVideo {
     border-radius: 25px;
-    width: 50%;
+    width: 300px;
+    height: 169px;
   }
 }

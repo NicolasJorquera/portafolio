@@ -27,6 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "watch": "babel --watch src ---out-dir lib --extensions '.ts,.tsx'",
+    "analyze": "react-scripts build && webpack-bundle-analyzer build/static/js/*.js",
     "tsc": "tsc"
   },
   "eslintConfig": {
@@ -48,6 +49,7 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "webpack-bundle-analyzer": "^4.10.2"
   }
 }

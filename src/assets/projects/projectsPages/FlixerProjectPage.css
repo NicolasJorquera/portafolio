@@ -98,6 +98,12 @@
     font-size: 2rem;
   }
 
+  .flixerProjectConclusion{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 100px;
+  }
+
   .flixerProjectObjective {
     margin-left: 150px;
     margin-right: 150px;
@@ -124,9 +130,11 @@
     justify-content: center;
   }
 
-  .videoFlixer {
+  .flixerProjectVideo {
     border-radius: 25px;
-    width: 50%;
+    width: 400px;
+    height: 720px;
+    margin-right: 150px;
   }
 }
 
@@ -252,8 +260,9 @@
     justify-content: center;
   }
 
-  .videoFlixer {
+  .flixerProjectVideo {
     border-radius: 25px;
-    width: 50%;
+    width: 250px;
+    height: 470px;
   }
 }
