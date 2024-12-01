@@ -2,7 +2,6 @@
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/SimulatorProjectPage.css";
 import simulatorProject from '../../../assets/images/projects/simulatorProject.webp'
-import simulatorProjectVideo from '../../../assets/images/projects/simulatorProject.mp4'
 
 
 

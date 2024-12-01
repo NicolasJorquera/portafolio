@@ -64,7 +64,7 @@ function Categories() {
                             companyName='Datablick'
                             bulletPoints={[
                                 "Desarrollo de una herramienta para calcular el uso de recursos por aplicaciones docker, y así poder determinar la infraestructura requerida.",
-                                "Tecnologías utilizadas: React \& Nodejs, Typescript, lambda, DynamoDB y Aurora MYSQL."
+                                "Tecnologías utilizadas: React & Nodejs, Typescript, lambda, DynamoDB y Aurora MYSQL."
                             ]} />
                     </Accordion.Body>
                 </Accordion.Item>

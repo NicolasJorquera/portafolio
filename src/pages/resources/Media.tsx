@@ -3,8 +3,7 @@
 
 import "../../assets/resources/Resources.css"
 
-import { useEffect, useRef, useState } from "react"
-import { Button } from "react-bootstrap"
+import { useEffect, useRef} from "react"
 import ResourceCard from "../../components/ResourceCard"
 
 

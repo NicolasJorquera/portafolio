@@ -2,7 +2,6 @@
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/Flappy2077ProjectPage.css";
 import flappy2077Project from '../../../assets/images/projects/flappy2077Project.webp'
-import flappy2077ProjectVideo from '../../../assets/images/projects/flappy2077Project.mp4'
 
 
 

@@ -2,7 +2,6 @@
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/DockeraidProjectPage.css";
 import dockeraidProject from '../../../assets/images/projects/dockeraidProject.webp'
-import dockeraidProjectVideo from '../../../assets/images/projects/dockeraidProject.mp4'
 
 
 

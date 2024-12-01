@@ -1,5 +1,5 @@
 
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/MappingProjectPage.css";
 import mappingProject from '../../../assets/images/projects/mappingProject.webp'
 

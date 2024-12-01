@@ -2,7 +2,6 @@
 import { Button, Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/FlixerProjectPage.css";
 import flixerProject from '../../../assets/images/projects/flixerProject.webp'
-import flixerProjectVideo from '../../../assets/images/projects/flixerProject.mp4'
 
 
 
