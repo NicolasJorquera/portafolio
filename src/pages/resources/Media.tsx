@@ -17,36 +17,6 @@ const resources: any[] = [
         resourceName: 'Ceremonia de titulación',
         resourceDescription: 'Ceremonia en la que se obtiene el grado de Ingeniero Civil Electrónica.',
         resourceLink: ''
-    },
-    {
-        resourceName: 'Algoritmo Bug para planificación de trayectorias',
-        resourceDescription: 'Simulación de un robot ocupando el algoritmo bug para llegar al punto final.',
-        resourceLink: 'https://www.youtube.com/playlist?list=PLJ2qBH-Q0nmlRSAX4Ra2xzhF8KIj2gYbp'
-    },
-    {
-        resourceName: 'Ceremonia de titulación',
-        resourceDescription: 'Ceremonia en la que se obtiene el grado de Ingeniero Civil Electrónica.',
-        resourceLink: ''
-    },
-    {
-        resourceName: 'Algoritmo Bug para planificación de trayectorias',
-        resourceDescription: 'Simulación de un robot ocupando el algoritmo bug para llegar al punto final.',
-        resourceLink: 'https://www.youtube.com/playlist?list=PLJ2qBH-Q0nmlRSAX4Ra2xzhF8KIj2gYbp'
-    },
-    {
-        resourceName: 'Ceremonia de titulación',
-        resourceDescription: 'Ceremonia en la que se obtiene el grado de Ingeniero Civil Electrónica.',
-        resourceLink: ''
-    },
-    {
-        resourceName: 'Algoritmo Bug para planificación de trayectorias',
-        resourceDescription: 'Simulación de un robot ocupando el algoritmo bug para llegar al punto final.',
-        resourceLink: 'https://www.youtube.com/playlist?list=PLJ2qBH-Q0nmlRSAX4Ra2xzhF8KIj2gYbp'
-    },
-    {
-        resourceName: 'Ceremonia de titulación',
-        resourceDescription: 'Ceremonia en la que se obtiene el grado de Ingeniero Civil Electrónica.',
-        resourceLink: ''
     }
 ]
 
