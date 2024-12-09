@@ -4,7 +4,6 @@
     .resourcesSectionContainer{
         margin-left: 150px;
         margin-right: 150px;
-        padding-top: 3rem;
         display: flex;
         justify-content: space-between;
         height: calc(100vh - 160px); /* 160px del navbar y el footer */
@@ -49,8 +48,8 @@
     .resourceSectionContainer{
         text-align: center;
         justify-content: end;
-        padding-top: 40%;
-        padding-bottom: 40%;
+        padding-top: 35vh;
+        padding-bottom: 35vh;
         overflow-y:auto;
         scrollbar-width: none;
     }
