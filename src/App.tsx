@@ -30,7 +30,8 @@ import { FaLinkedinIn } from "react-icons/fa";
 import {
   BrowserRouter as Router,
   Routes,
-  Route
+  Route,
+  Navigate
 } from "react-router-dom";
 
 
@@ -69,6 +70,7 @@ function App() {
             <Route path="/resources" element={<ResourcesPage/>}></Route>
             <Route path="/contact" element={<ContactPage/>} />
             <Route path="/" element={<HomePage />} />
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
         </Router>
       </div>
