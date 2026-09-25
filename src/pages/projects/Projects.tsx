@@ -7,7 +7,7 @@ import flixerProject from '../../assets/images/projects/flixerProject.webp'
 import mappingProject from '../../assets/images/projects/mappingProject.webp'
 // import mappingPDF from '../assets/images/projects/M19615449-3.pdf'
 import simulatorProject from '../../assets/images/projects/simulatorProject.webp'
-import { useEffect, useState } from "react"
+import { useMemo, useState } from "react"
 import { Button } from "react-bootstrap"
 import ProjectPreview from "../../components/ProjectPreview"
 import flappy2077Project from '../../assets/images/projects/flappy2077Project.webp'
@@ -59,11 +59,9 @@ const projects: any[] = [
 
 
 function Projects() {
-    const [technologies, setTechnologies] = useState<string[]>([])
     const [technologiesSelected, setTechnologiesSelected] = useState<string[]>(['All'])
-    const [projectsFiltered, setProjectsFiltered] = useState<any[]>(projects)
 
-    const getTechnologies = () => {
+    const technologies = useMemo(() => {
         let techs: string[] = ['All']
 
         projects.forEach(project => {
@@ -74,45 +72,15 @@ function Projects() {
             });
         });
 
-        setTechnologies(techs)
-    }
-
-    useEffect(()=>{
-        getTechnologies()
+        return techs
     }, [])
 
-    
-
-
-    const filterProjects = () => {
-        let pjts: any[] = []
-
-
-        
+    const projectsFiltered = useMemo(() => {
         if (technologiesSelected[0] === 'All') {
-            pjts = projects
-        }else{
-            projects.forEach((project)=>{
-                technologiesSelected.every((tech)=>{
-                    if (project.tags.includes(tech)) {
-                        pjts.push(project)
-                        return false
-                    }
-                    return true
-                })
-            })
+            return projects
         }
-
-        
-
-        setProjectsFiltered(pjts)
-        setTechnologies([])
-        getTechnologies()
-    }
-
-    useEffect(()=>{
-        filterProjects()
-    })
+        return projects.filter((project) => technologiesSelected.some((tech) => project.tags.includes(tech)))
+    }, [technologiesSelected])
 
     function handleTechTagClick(t: string) {
         let tech = [...technologiesSelected]
@@ -164,7 +132,7 @@ function Projects() {
                     {
                         technologies.map((tech) => {
                             return(
-                                <Button onClick={ () => handleTechTagClick(tech)}  variant= {updateButtonVariant(tech)} className='projectTagFilter'>
+                                <Button key={tech} onClick={ () => handleTechTagClick(tech)}  variant= {updateButtonVariant(tech)} className='projectTagFilter'>
                                     {tech}
                                 </Button>
                             )
@@ -178,7 +146,7 @@ function Projects() {
                 {
                     projectsFiltered.map((project)=>{
                         return(
-                            <ProjectPreview projectName={project.projectName} imageFile={project.imageFile} tags={project.tags} projectPage={project.projectPage}/>
+                            <ProjectPreview key={project.projectPage} projectName={project.projectName} imageFile={project.imageFile} tags={project.tags} projectPage={project.projectPage}/>
                         )
                     })
                 }
