@@ -1,12 +1,12 @@
 
 
 
-import Button from 'react-bootstrap/esm/Button';
+import Button from 'react-bootstrap/Button';
 import '../../assets/contact/ContactPlatforms.css'
 
 import Form from 'react-bootstrap/Form';
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 
@@ -20,50 +20,43 @@ function ContactPlatforms() {
     const [loading, setLoading] = useState(false);
 
     
-    useEffect(() => emailjs.init("ZgN--35fMFvll3cIj"), []);
+    useEffect(() => { emailjs.init("ZgN--35fMFvll3cIj"); }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
         const serviceId = "service_hcfgoav";
         const templateIdSent = "portfolio_sent";
         const templateIdSend = "portfolio_send";
+        const params = {
+          user_name: name,
+          user_company: company,
+          user_email: email,
+          user_message: message
+        };
 
-
+        setLoading(true);
         try {
-          setLoading(true);
-          await emailjs.send(serviceId, templateIdSend, {
-            user_name: name,
-            user_company:company,
-            user_email: email,
-            user_message: message
-          });
-          alert("email successfully sent check inbox");
+          await emailjs.send(serviceId, templateIdSend, params);
         } catch (error) {
-          console.log(error);
-        } finally {
+          console.error(error);
+          alert("No se pudo enviar el mensaje, intenta nuevamente.");
           setLoading(false);
+          return;
         }
 
-
+        // Confirmación al remitente: si falla, el mensaje principal ya se envió
         try {
-            setLoading(true);
-            await emailjs.send(serviceId, templateIdSent, {
-              user_name: name,
-              user_company:company,
-              user_email: email,
-              user_message: message
-            });
-          } catch (error) {
-            console.log(error);
-          } finally {
-            setLoading(false);
-          }
-  
+          await emailjs.send(serviceId, templateIdSent, params);
+        } catch (error) {
+          console.error(error);
+        }
 
-          setName("")
-          setCompany("")
-          setEmail("")
-          setMessage("")
+        setLoading(false);
+        alert("email successfully sent check inbox");
+        setName("")
+        setCompany("")
+        setEmail("")
+        setMessage("")
 
       };
 
@@ -89,26 +82,26 @@ function ContactPlatforms() {
 
     return(
         <div className='contactPlatformsContainer'>
-            <Form className='formContainer' >
+            <Form id='contactForm' className='formContainer' onSubmit={handleSubmit}>
                 <Form.Group  controlId="exampleForm.ControlInput1">
                     <Form.Label>Nombre completo</Form.Label>
-                    <Form.Control autoComplete='new-password' onChange={handleChangeName}  type="text" />
+                    <Form.Control autoComplete='new-password' required value={name} onChange={handleChangeName}  type="text" />
                 </Form.Group>
                 <Form.Group  controlId="exampleForm.ControlInput2">
                     <Form.Label>Empresa u organización</Form.Label>
-                    <Form.Control autoComplete='new-password' onChange={handleChangeCompany} size='lg' type="text"  />
+                    <Form.Control autoComplete='new-password' value={company} onChange={handleChangeCompany} size='lg' type="text"  />
                 </Form.Group>
                 <Form.Group  controlId="exampleForm.ControlInput3">
                     <Form.Label>Email</Form.Label>
-                    <Form.Control autoComplete='new-password' onChange={handleChangeEmail} size='lg' type="email" />
+                    <Form.Control autoComplete='new-password' required value={email} onChange={handleChangeEmail} size='lg' type="email" />
                 </Form.Group>
                 <Form.Group  controlId="exampleForm.ControlTextarea1">
                     <Form.Label>Mensaje</Form.Label>
-                    <Form.Control autoComplete='new-password' onChange={handleChangeMessage} as="textarea" rows={3} />
+                    <Form.Control autoComplete='new-password' required value={message} onChange={handleChangeMessage} as="textarea" rows={3} />
                 </Form.Group>
             </Form>
             <div className='sendMail'>
-                <Button onClick={handleSubmit} className='sendMailButton' variant='primary' size='lg'>
+                <Button type='submit' form='contactForm' disabled={loading} className='sendMailButton' variant='primary' size='lg'>
                     Enviar
                 </Button>
             </div>
