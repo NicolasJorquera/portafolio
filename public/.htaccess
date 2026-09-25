@@ -1,0 +1,10 @@
+# Fallback de SPA para Apache (cPanel): cualquier ruta que no sea un archivo
+# o directorio real se sirve con index.html para que la maneje react-router.
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+  RewriteRule ^index\.html$ - [L]
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule . /index.html [L]
+</IfModule>
