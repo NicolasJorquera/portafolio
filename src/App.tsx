@@ -32,7 +32,7 @@ import {
   Routes,
   Route,
   Navigate
-} from "react-router-dom";
+} from "react-router";
 
 
 function App() {
