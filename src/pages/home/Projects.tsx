@@ -49,7 +49,7 @@ function Projects() {
                 {
                     lastProjects.map((project)=>{
                         return(
-                            <ProjectPreview projectName={project.projectName} imageFile={project.imageFile} tags={project.tags} projectPage={project.projectPage}/>
+                            <ProjectPreview key={project.projectPage} projectName={project.projectName} imageFile={project.imageFile} tags={project.tags} projectPage={project.projectPage}/>
                         )
                     })
                 }

@@ -31,7 +31,7 @@ function ProjectPreview(props: projectPreviewProps) {
                     {
                         props.tags.map((tag) => {
                             return(
-                                <Button variant='outline-secondary' className='projectTag'>
+                                <Button key={tag} variant='outline-secondary' className='projectTag'>
                                     {tag}
                                 </Button>
                             )

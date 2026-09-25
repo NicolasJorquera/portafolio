@@ -22,14 +22,14 @@ function transactionFlowProjectPage() {
                         project.tags.map((tag, index) => {
                             if (index === project.tags.length - 1) {
                                 return (
-                                    <div>
+                                    <div key={tag}>
                                         {tag.toUpperCase()}
                                     </div>
                                 )
                             }
                             else {
                                 return (
-                                    <div className="withPointsContainer">
+                                    <div key={tag} className="withPointsContainer">
                                         {tag.toUpperCase()}
                                         <div className="headerPoints">
                                         </div>
