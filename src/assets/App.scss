@@ -7,7 +7,7 @@ $theme-colors: (
   "transparent": transparent
 );
 
-@import '~bootstrap/scss/bootstrap.scss';
+@import 'bootstrap/scss/bootstrap.scss';
 @media (min-width: 800px){
   .navbar-expand-sm .navbar-collapse {
     justify-content: end;
