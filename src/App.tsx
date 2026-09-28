@@ -31,25 +31,40 @@ import {
   BrowserRouter as Router,
   Routes,
   Route,
-  Navigate
+  Navigate,
+  Link,
+  useLocation
 } from "react-router";
+import { useLayoutEffect } from 'react';
+
+
+// Con navegación de SPA el scroll se conserva entre páginas; se vuelve arriba al cambiar de ruta
+function ScrollToTop() {
+  const { pathname } = useLocation();
+  useLayoutEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+  }, [pathname]);
+  return null;
+}
 
 
 function App() {
   return (
+    <Router>
     <div>
-      <Navbar expand="sm" bg="dark" data-bs-theme="dark" sticky="top" className='navbar'>
+      <ScrollToTop />
+      <Navbar collapseOnSelect expand="sm" bg="dark" data-bs-theme="dark" sticky="top" className='navbar'>
         <Container>
-          <Navbar.Brand href="/" >
+          <Navbar.Brand as={Link} to="/" >
             <Image className='logoSize' src={logoDark}/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav >
-              <Nav.Link href="/about" className='leftPaddingNavbarItems'>Sobre mi</Nav.Link>
-              <Nav.Link href="/projects" className='leftPaddingNavbarItems'>Proyectos</Nav.Link>
-              <Nav.Link href="/resources" className='leftPaddingNavbarItems'>Recursos</Nav.Link>
-              <Nav.Link href="/contact" className='leftPaddingNavbarItems'>Contacto</Nav.Link>
+              <Nav.Link as={Link} to="/about" eventKey="/about" className='leftPaddingNavbarItems'>Sobre mi</Nav.Link>
+              <Nav.Link as={Link} to="/projects" eventKey="/projects" className='leftPaddingNavbarItems'>Proyectos</Nav.Link>
+              <Nav.Link as={Link} to="/resources" eventKey="/resources" className='leftPaddingNavbarItems'>Recursos</Nav.Link>
+              <Nav.Link as={Link} to="/contact" eventKey="/contact" className='leftPaddingNavbarItems'>Contacto</Nav.Link>
             </Nav>
           </Navbar.Collapse>
         </Container>
@@ -57,7 +72,6 @@ function App() {
       
 
       <div className='widthRestriction'>
-        <Router>
           <Routes>
             <Route path="/about" element={<AboutPage/>} />
             <Route path="/projects" element={<ProjectsPage/>} />
@@ -72,7 +86,6 @@ function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
-        </Router>
       </div>
       
 
@@ -91,6 +104,7 @@ function App() {
         </div>
       </div>
     </div>
+    </Router>
     
     
   );

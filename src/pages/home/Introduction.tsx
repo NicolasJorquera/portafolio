@@ -2,7 +2,7 @@ import '../../assets/home/Introduction.css'
 import Image from 'react-bootstrap/Image';
 
 import profilePicture from '../../assets/profilePicture.jpg'
-import { Button } from 'react-bootstrap';
+import { Link } from 'react-router';
 import React from 'react';
 
 function Introduction() {
@@ -40,9 +40,9 @@ function Introduction() {
                     Mi versatilidad me permite abordar desde la conceptualización hasta la implementación, 
                     garantizando soluciones integrales y eficientes en cada etapa del proceso.
                     </div>
-                    <Button size='lg' href='/about'>
+                    <Link to='/about' className='btn btn-primary btn-lg' role='button'>
                         Sobre mi
-                    </Button>
+                    </Link>
                 </div>
                 
             </div>

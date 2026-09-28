@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { cleanup, fireEvent, render, screen } from '@testing-library/react';
 import { afterEach, describe, expect, test } from 'vitest';
 import App from './App';
 
@@ -7,7 +7,10 @@ const renderAt = (path: string) => {
   return render(<App />);
 };
 
-afterEach(() => window.history.pushState({}, '', '/'));
+afterEach(() => {
+  cleanup();
+  window.history.pushState({}, '', '/');
+});
 
 describe('App', () => {
   test('muestra la navegación y el footer', () => {
@@ -25,6 +28,13 @@ describe('App', () => {
   ])('renderiza %s', (path, text) => {
     renderAt(path);
     expect(screen.getAllByText(text).length).toBeGreaterThan(0);
+  });
+
+  test('navega desde el navbar sin recargar la página', () => {
+    renderAt('/');
+    fireEvent.click(screen.getByRole('link', { name: 'Proyectos' }));
+    expect(window.location.pathname).toBe('/projects');
+    expect(screen.getByText(/Tecnología:/)).toBeInTheDocument();
   });
 
   test('redirige rutas inexistentes al inicio', () => {
