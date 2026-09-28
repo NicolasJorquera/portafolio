@@ -1,5 +1,5 @@
 
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/SimulatorProjectPage.css";
 import simulatorProject from '../../../assets/images/projects/simulatorProject.webp'
 
@@ -44,11 +44,6 @@ function SimulatorProjectPage() {
                 </div>
                 <div className="headerTitle">
                 {project.projectName}
-                </div>
-                <div className="simulatorProjectLinks">
-                    <Button variant="white" href="https://sim.assayware.com/" target="_blank" className="projectLink">
-                        Visitar página
-                    </Button>
                 </div>
             </div>
             

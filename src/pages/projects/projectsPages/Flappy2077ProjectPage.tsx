@@ -46,9 +46,6 @@ function Flappy2077ProjectPage() {
                     {project.projectName}
                 </div>
                 <div className="flappy2077ProjectLinks">
-                    <Button variant="white" href="https://play.google.com/store/apps/details?id=com.gonisoma.Flappy2077" target="_blank" className="projectLink">
-                        Play Store
-                    </Button>
                     <Button variant="white" href="https://www.youtube.com/watch?v=XtQMytORBmM" target="_blank" className="projectLink">
                         Tutorial
                     </Button>

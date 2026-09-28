@@ -1,5 +1,5 @@
 
-import { Button, Image } from "react-bootstrap";
+import { Image } from "react-bootstrap";
 import "../../../assets/projects/projectsPages/DockeraidProjectPage.css";
 import dockeraidProject from '../../../assets/images/projects/dockeraidProject.webp'
 
@@ -44,11 +44,6 @@ function DockeraidProjectPage() {
                 </div>
                 <div className="headerTitle">
                     {project.projectName}
-                </div>
-                <div className="dockeraidProjectLinks">
-                    <Button variant="white" href="https://dockeraid.assayware.com/" target="_blank" className="projectLink">
-                        Visitar página
-                    </Button>
                 </div>
             </div>
 
