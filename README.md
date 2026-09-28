@@ -25,13 +25,20 @@ npm run dev   # servidor de desarrollo en http://localhost:3000 (npm start hace 
 | `npm test` | Tests con Vitest (modo watch; `npm test -- --run` para una sola pasada) |
 | `npm run typecheck` | Solo chequeo de tipos |
 
-## Publicar en cPanel
+## Publicar (Vercel)
 
-1. `npm run build` y comprimir el **contenido** de `build/` en un `.zip` (incluye el `.htaccess`; en macOS, los archivos que empiezan con punto quedan ocultos en Finder, así que conviene comprimir desde la terminal: `cd build && zip -r ../build.zip . && cd ..`).
-2. Entrar a cPanel → Administrador de archivos → `public_html/nicolasjorquera.com`.
-3. Subir `build.zip` y extraerlo en esa carpeta.
+El sitio se publica en [Vercel](https://vercel.com) conectado a este repositorio de GitHub:
 
-Notas:
+- Cada push a `main` genera un deploy de producción automáticamente.
+- Cada pull request genera una URL de preview.
+- La configuración está en `vercel.json`: build con `npm run build`, salida en `build/` y reescritura de todas las rutas a `index.html` (necesaria para recargar en rutas internas como `/projects/flixer`).
+- La versión de Node la toma del campo `engines` de `package.json`.
 
-- Los archivos de `assets/` llevan un hash en el nombre, así que en cada deploy se acumulan los antiguos. No rompen nada, pero se pueden borrar los de `assets/` que no estén referenciados por el `index.html` nuevo (o vaciar la carpeta antes de extraer).
-- El `.htaccess` (en `public/`, se copia al build) redirige cualquier ruta interna a `index.html` para que funcione recargar en, por ejemplo, `/projects/flixer`. Si falta en el servidor, esas recargas dan 404.
+Configuración inicial (una sola vez): en Vercel, **Add New → Project**, importar el repo `portafolio` y desplegar; los valores de `vercel.json` se aplican solos. Para usar un dominio propio: **Project → Settings → Domains**.
+
+### Alternativa: cPanel
+
+1. `npm run build` y comprimir el **contenido** de `build/` desde la terminal (así se incluye el `.htaccess`, que Finder oculta): `cd build && zip -r ../build.zip . && cd ..`.
+2. En cPanel → Administrador de archivos, subir `build.zip` a la carpeta del dominio y extraerlo.
+
+El `.htaccess` (en `public/`) redirige las rutas internas a `index.html`; sin él, recargar en una ruta interna da 404.
